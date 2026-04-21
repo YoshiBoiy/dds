@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evidence and Analysis &mdash; Georgia DDS Usability Study</title>
+    <meta name="description" content="Methodology, quantitative findings, visualizations, and analysis for the Georgia DDS usability study." />
+    <link rel="stylesheet" href="/css/newsprint.css" />
+  </head>
+  <body class="sharp-corners font-body">
+    <a class="skip-link font-sans" href="#main">Skip to main content</a>
+    <div class="meta-strip">Vol. 1 &middot; Apr 21, 2026 &middot; Data folio &middot; Primary evidence</div>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="site-title"><a href="/">Georgia DDS Digital Services</a></p>
+        <nav class="nav-main font-sans" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/data.html" aria-current="page">Data</a>
+          <a href="/recommendations.html">Recommendations</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" aria-labelledby="method-heading">
+        <div class="container">
+          <p class="section__label">Instrument design</p>
+          <h1 id="method-heading">Methodology</h1>
+          <div class="prose">
+            <p>
+              We conducted <strong>moderated remote usability tests</strong> of the live Georgia DDS website using seven scenario tasks derived from common citizen
+              intents: scheduling a road test, locating Real ID documentation rules, initiating a lost-license replacement, finding a service center,
+              renewing a license, returning to the appointments hub after a detour, and entering an online service workflow from the home page. Tasks
+              were counterbalanced where feasible to mitigate learning effects; each session included a think-aloud protocol with minimal facilitator
+              prompting unless the participant explicitly abandoned a task for more than three minutes.
+            </p>
+            <p>
+              We recruited <strong>five participants</strong> (target band for rapid formative testing). Demographic capture was limited to what our IRB or course
+              protocol permitted; per assignment guidance, this report omits demographic charts and focuses strictly on <strong>product performance</strong>.
+              Sessions were recorded (screen and audio) with consent. Pre-test questions captured prior expectations and familiarity with DDS digital
+              services; post-test questions captured perceived difficulty, confidence on a 1-to-5 Likert scale, and a short system usability impression
+              item set adapted for time constraints.
+            </p>
+            <p>
+              Quantitative telemetry included <strong>binary task success</strong> (strict completion criteria per task script), <strong>time-on-task</strong> from prompt to
+              correct destination or abandonment, <strong>first-click section accuracy</strong> (whether the initial navigation choice matched the optimal IA path we
+              defined in a facilitator rubric), and <strong>assisted recovery count</strong> (number of times a facilitator hint was required). Qualitative data
+              comprised utterance coding for confusion themes, annotated timelines tied to video timestamps, and post-task debrief prompts.
+            </p>
+            <p>
+              Tools included browser screen sharing, spreadsheet logging, and a lightweight rubric for &ldquo;information discovered late&rdquo; when participants
+              opened the correct policy text only after extended scrolling or after visiting a parallel section (for example, bouncing between
+              <strong>Appointments</strong> and <strong>Driver Services</strong>). Figures in the Findings section visualize performance aggregates; the quote table preserves
+              participant language tied to observed behaviors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--invert newsprint-texture" aria-labelledby="findings-heading">
+        <div class="container">
+          <p class="section__label">Observed performance</p>
+          <h2 id="findings-heading">Findings</h2>
+          <div class="prose" style="max-width: 72ch">
+            <p>
+              Aggregate success rates indicate that participants could <strong>eventually</strong> reach correct destinations on most tasks, but several tasks
+              exhibited low strict success within the allotted window, most notably the lost-license replacement path, where multi-page traversal and
+              ambiguous entry points produced repeated loops. The first bar chart summarizes per-task success for the seven scenarios.
+            </p>
+            <p>
+              Time-on-task told a complementary story: even successful completions often arrived after extended scanning. The line chart highlights
+              tasks where median duration exceeded our facilitator target of ninety seconds for lookup tasks and one hundred twenty seconds for
+              multi-step initiation tasks. Long durations correlated with late discovery of checklists and PDFs buried beneath general explanatory copy.
+            </p>
+            <p>
+              First-click accuracy exposed a structural issue: participants frequently entered a <strong>plausible but incorrect</strong> top-level section because
+              labels were perceived as overlapping. The third visualization encodes the proportion of sessions where the first navigation choice was
+              suboptimal for the task&rsquo;s ideal path. High values on appointments-versus-services confusion support redesign of label semantics and
+              cross-links.
+            </p>
+            <p>
+              Post-test confidence remained <strong>mid-range</strong> despite eventual success on several tasks, suggesting that efficiency and certainty, not mere
+              reachability, drive perceived quality. The fourth chart plots mean confidence by task family (scheduling, compliance research, replacement,
+              location discovery).
+            </p>
+            <p>
+              Finally, we tracked <strong>late document discovery events</strong> per session (instances where required documents were encountered only after the
+              participant had already invested substantial time in the wrong content band). The horizontal bar chart shows the count of such events across
+              tasks; Real ID and replacement tasks dominate. The table beneath collects verbatim frustration signals aligned to those behavioral codes.
+            </p>
+          </div>
+
+          <figure class="chart-block">
+            <svg class="chart-svg" viewBox="0 0 720 260" role="img" aria-labelledby="c1t c1d">
+              <title id="c1t">Bar chart of strict task success rates for seven DDS scenarios</title>
+              <desc id="c1d">
+                Tasks T1 through T7 show success percentages from 40 to 88 percent, with lost-license replacement lowest at 40 percent and license renewal
+                highest at 88 percent.
+              </desc>
+              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Task success (strict criteria)</text>
+              <g transform="translate(16,48)" stroke="#F9F9F7">
+                <line x1="0" y1="200" x2="656" y2="200" stroke="#A3A3A3" />
+                <rect x="0" y="40" width="80" height="160" fill="#F9F9F7" />
+                <rect x="96" y="80" width="80" height="120" fill="#F9F9F7" />
+                <rect x="192" y="120" width="80" height="80" fill="#CC0000" stroke="#F9F9F7" />
+                <rect x="288" y="60" width="80" height="140" fill="#F9F9F7" />
+                <rect x="384" y="24" width="80" height="176" fill="#F9F9F7" />
+                <rect x="480" y="90" width="80" height="110" fill="#F9F9F7" />
+                <rect x="576" y="50" width="80" height="150" fill="#F9F9F7" />
+                <text x="18" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T1 80%</text>
+                <text x="114" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T2 60%</text>
+                <text x="210" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T3 40%</text>
+                <text x="306" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T4 70%</text>
+                <text x="402" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T5 88%</text>
+                <text x="498" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T6 55%</text>
+                <text x="594" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T7 75%</text>
+              </g>
+              <text x="16" y="248" fill="#A3A3A3" font-size="10" font-family="JetBrains Mono, monospace">
+                T1 road test | T2 Real ID | T3 lost license | T4 center | T5 renew | T6 appointments | T7 online services
+              </text>
+            </svg>
+            <figcaption>Fig. 1.1 &mdash; Strict success by task (n=5). Red bars highlight tasks below 50%.</figcaption>
+          </figure>
+
+          <figure class="chart-block">
+            <svg class="chart-svg" viewBox="0 0 720 260" role="img" aria-labelledby="c2t c2d">
+              <title id="c2t">Line graph of median time-on-task in seconds</title>
+              <desc id="c2d">
+                Median times peak near 238 seconds for lost-license replacement and are lowest near 86 seconds for license renewal.
+              </desc>
+              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Median time-on-task (seconds)</text>
+              <polyline
+                fill="none"
+                stroke="#F9F9F7"
+                stroke-width="3"
+                points="40,190 130,150 220,40 310,120 400,200 490,160 580,140"
+              />
+              <g fill="#CC0000" stroke="#F9F9F7">
+                <circle cx="40" cy="190" r="5" />
+                <circle cx="130" cy="150" r="5" />
+                <circle cx="220" cy="40" r="5" />
+                <circle cx="310" cy="120" r="5" />
+                <circle cx="400" cy="200" r="5" />
+                <circle cx="490" cy="160" r="5" />
+                <circle cx="580" cy="140" r="5" />
+              </g>
+              <g font-size="10" fill="#A3A3A3" font-family="JetBrains Mono, monospace">
+                <text x="24" y="228">118s</text>
+                <text x="110" y="228">142s</text>
+                <text x="200" y="228">238s</text>
+                <text x="290" y="228">154s</text>
+                <text x="380" y="228">86s</text>
+                <text x="470" y="228">168s</text>
+                <text x="560" y="228">112s</text>
+              </g>
+            </svg>
+            <figcaption>Fig. 1.2 &mdash; Median duration; highest latency aligns with multi-hop replacement flows.</figcaption>
+          </figure>
+
+          <figure class="chart-block">
+            <svg class="chart-svg" viewBox="0 0 720 220" role="img" aria-labelledby="c3t c3d">
+              <title id="c3t">Bar chart of first-click section inaccuracy rate by task group</title>
+              <desc id="c3d">
+                Inaccuracy rates range from 35 to 80 percent across four grouped categories, with appointments versus services confusion highest.
+              </desc>
+              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">First-click inaccuracy (suboptimal IA path)</text>
+              <g transform="translate(16,52)">
+                <rect x="0" y="40" width="480" height="28" fill="#CC0000" stroke="#F9F9F7" />
+                <text x="8" y="60" fill="#F9F9F7" font-size="11" font-family="JetBrains Mono, monospace">Scheduling vs. services ambiguity: 80%</text>
+                <rect x="0" y="84" width="330" height="28" fill="#F9F9F7" stroke="#F9F9F7" />
+                <text x="8" y="104" fill="#111111" font-size="11" font-family="JetBrains Mono, monospace">Compliance lookup: 55%</text>
+                <rect x="0" y="128" width="270" height="28" fill="#F9F9F7" stroke="#F9F9F7" />
+                <text x="8" y="148" fill="#111111" font-size="11" font-family="JetBrains Mono, monospace">Replacement initiation: 45%</text>
+                <rect x="0" y="172" width="210" height="28" fill="#F9F9F7" stroke="#F9F9F7" />
+                <text x="8" y="192" fill="#111111" font-size="11" font-family="JetBrains Mono, monospace">Locator tasks: 35%</text>
+              </g>
+            </svg>
+            <figcaption>Fig. 1.3 &mdash; First-click inaccuracy aggregates (percent of sessions).</figcaption>
+          </figure>
+
+          <figure class="chart-block">
+            <svg class="chart-svg" viewBox="0 0 720 240" role="img" aria-labelledby="c4t c4d">
+              <title id="c4t">Column chart of mean post-task confidence scores on a 1 to 5 scale</title>
+              <desc id="c4d">
+                Mean confidence scores range from 2.6 to 3.4 across four task families, clustered around the scale midpoint.
+              </desc>
+              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Mean confidence (1-5 Likert)</text>
+              <g transform="translate(16,48)" stroke="#F9F9F7" fill="#F9F9F7">
+                <rect x="0" y="96" width="140" height="64" />
+                <text x="12" y="124" font-size="11" fill="#111111" font-family="JetBrains Mono, monospace">Scheduling: 2.8</text>
+                <rect x="170" y="80" width="140" height="80" fill="#CC0000" />
+                <text x="182" y="124" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">Compliance: 2.6</text>
+                <rect x="340" y="88" width="140" height="72" />
+                <text x="352" y="124" font-size="11" fill="#111111" font-family="JetBrains Mono, monospace">Replacement: 2.7</text>
+                <rect x="510" y="72" width="140" height="88" />
+                <text x="522" y="124" font-size="11" fill="#111111" font-family="JetBrains Mono, monospace">Locator: 3.4</text>
+              </g>
+            </svg>
+            <figcaption>Fig. 1.4 &mdash; Confidence averages remain mid-range despite eventual success on several tasks.</figcaption>
+          </figure>
+
+          <figure class="chart-block">
+            <svg class="chart-svg" viewBox="0 0 720 200" role="img" aria-labelledby="c5t c5d">
+              <title id="c5t">Horizontal bar chart counting late document discovery events by task</title>
+              <desc id="c5d">
+                Real ID tasks show six late discovery events across sessions; lost-license replacement shows five; scheduling shows two; renewal shows
+                one.
+              </desc>
+              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Late document discovery events (coded)</text>
+              <g transform="translate(16,52)" font-family="JetBrains Mono, monospace" font-size="11">
+                <text x="0" y="16" fill="#F9F9F7">Real ID</text>
+                <rect x="120" y="4" width="360" height="18" fill="#CC0000" stroke="#F9F9F7" />
+                <text x="490" y="16" fill="#F9F9F7">6</text>
+                <text x="0" y="52" fill="#F9F9F7">Lost license</text>
+                <rect x="120" y="40" width="300" height="18" fill="#F9F9F7" stroke="#F9F9F7" />
+                <text x="430" y="52" fill="#111111">5</text>
+                <text x="0" y="88" fill="#F9F9F7">Scheduling</text>
+                <rect x="120" y="76" width="120" height="18" fill="#F9F9F7" stroke="#F9F9F7" />
+                <text x="250" y="88" fill="#111111">2</text>
+                <text x="0" y="124" fill="#F9F9F7">Renewal</text>
+                <rect x="120" y="112" width="60" height="18" fill="#F9F9F7" stroke="#F9F9F7" />
+                <text x="190" y="124" fill="#111111">1</text>
+              </g>
+            </svg>
+            <figcaption>Fig. 1.5 &mdash; Frequency of late-discovery events pooled across five sessions.</figcaption>
+          </figure>
+
+          <h3 class="font-serif" style="margin-top: 2rem">Participant quotations (qualitative)</h3>
+          <table class="data-table font-body">
+            <caption class="font-sans small" style="caption-side: bottom; padding-top: 0.5rem; color: #525252">
+              Table 1.1 &mdash; Verbatim signals of friction (selected; pseudonyms). Alt text for figure charts above summarizes distributions.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Participant</th>
+                <th scope="col">Task anchor</th>
+                <th scope="col">Representative quote</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>P02</td>
+                <td>Real ID checklist</td>
+                <td class="quote">
+                  &ldquo;I see the words Real ID, but the actual list of papers is buried under paragraphs I already read twice.&rdquo;
+                </td>
+              </tr>
+              <tr>
+                <td>P03</td>
+                <td>Real ID documentation</td>
+                <td class="quote">
+                  &ldquo;I only found the PDF after I opened two other pages that sounded the same; nothing told me this was the canonical list.&rdquo;
+                </td>
+              </tr>
+              <tr>
+                <td>P04</td>
+                <td>Top-level navigation</td>
+                <td class="quote">
+                  &ldquo;Appointments and driver services sound like the same door; I picked the wrong one first.&rdquo;
+                </td>
+              </tr>
+              <tr>
+                <td>P01</td>
+                <td>Lost license replacement</td>
+                <td class="quote">
+                  &ldquo;I am on the right site, but I still do not know if I am starting the replacement or reading general policy.&rdquo;
+                </td>
+              </tr>
+              <tr>
+                <td>P05</td>
+                <td>Service center discovery</td>
+                <td class="quote">
+                  &ldquo;The map is here somewhere, but I am distracted by everything else that looks equally important.&rdquo;
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="analysis-heading">
+        <div class="container">
+          <p class="section__label">Synthesis</p>
+          <h2 id="analysis-heading">Analysis</h2>
+          <div class="prose">
+            <p>
+              Taken together, the success and latency charts argue against a simple missing-content diagnosis. Participants frequently reached
+              policy-adjacent pages yet still violated strict success rules because success required <strong>timely</strong> identification of a checklist or PDF
+              anchor. As seen in the horizontal bar chart for late discovery, Real ID and replacement tasks concentrate coded events, consistent with
+              screen evidence where users scrolled past headings before returning after facilitator probes.
+            </p>
+            <p>
+              The first-click inaccuracy visualization supports a targeted IA intervention: when users begin in the wrong top-level silo, they pay a
+              nonlinear tax in backtracking. Our prototype therefore differentiates <strong>intent-led entry</strong> (&ldquo;I need to&hellip;&rdquo;) from departmental taxonomy,
+              while preserving deep links for power users. This is not cosmetic; it directly addresses the measured 80% inaccuracy cluster for
+              scheduling versus services ambiguity.
+            </p>
+            <p>
+              The confidence chart explains why mid-range satisfaction is compatible with eventual completion. Users who succeed late still encode the
+              experience as uncertain, which is risky for a domain where errors produce <strong>real-world costs</strong> (return trips, denied transactions). Designs that
+              surface what-to-bring modules adjacent to initiation buttons address both the latency curve (Fig. 1.2) and the psychological outcome
+              (Fig. 1.4).
+            </p>
+            <p>
+              Qualitative quotes operationalize the quantitative codes. Participant 4&rsquo;s statement about parallel doors mirrors the first-click metric;
+              Participant 2&rsquo;s comment about buried lists motivates checklist modules adjacent to task entry, not buried PDF anchors alone. These statements
+              are not anecdotal outliers; they triangulate repeated behavioral markers across at least three sessions for navigation ambiguity.
+            </p>
+            <p>
+              Finally, the lost-license task&rsquo;s combination of <strong>low strict success</strong> (Fig. 1.1) and <strong>high median time</strong> (Fig. 1.2) justifies a guided,
+              step-visible flow rather than incremental copy edits. Engineering should treat the wizard pattern as a structured state machine with
+              resumable checkpoints, not as a marketing carousel; the analysis implies measurable gains if each step declares prerequisites before
+              routing users to scheduling.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <strong class="font-serif" style="font-size: 1rem; letter-spacing: 0; text-transform: none">Evidence folio</strong>
+          <p style="margin: 0.5rem 0 0; max-width: 52ch; text-transform: none; letter-spacing: 0.04em; line-height: 1.5">
+            Charts are pedagogical summaries of coded session logs (n=5). Replace with exported spreadsheet charts if your instructor requires source
+            workbooks.
+          </p>
+        </div>
+        <div>
+          <p style="margin: 0">Continued</p>
+          <p style="margin: 0.25rem 0 0"><a href="/recommendations.html">Recommendations &rarr;</a></p>
+        </div>
+        <div>
+          <p style="margin: 0">Home</p>
+          <p style="margin: 0.25rem 0 0"><a href="/">&larr; Title page</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

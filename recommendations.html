@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recommendations and Conclusion &mdash; Georgia DDS Usability Study</title>
+    <meta name="description" content="Design recommendations, before-and-after comparisons, interactive prototype, and conclusion for the Georgia DDS study." />
+    <link rel="stylesheet" href="/css/newsprint.css" />
+  </head>
+  <body class="sharp-corners font-body">
+    <a class="skip-link font-sans" href="#main">Skip to main content</a>
+    <div class="meta-strip">Vol. 1 &middot; Apr 21, 2026 &middot; Recommendations folio &middot; Stakeholder review</div>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="site-title"><a href="/">Georgia DDS Digital Services</a></p>
+        <nav class="nav-main font-sans" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/data.html">Data</a>
+          <a href="/recommendations.html" aria-current="page">Recommendations</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section newsprint-texture" aria-labelledby="rec-heading">
+        <div class="container">
+          <p class="section__label">Prescriptive design response</p>
+          <h1 id="rec-heading">Recommendations</h1>
+          <div class="prose">
+            <p>
+              Our recommendations translate the Data page metrics into <strong>IA, layout, and interaction</strong> changes that preserve legal completeness while
+              reducing wrong-path starts. First, <strong>re-segment top-level navigation</strong> so that scheduling, transactional online services, and educational
+              compliance content use distinct verbs and destinations; this directly targets the first-click inaccuracy cluster observed between
+              appointments and general driver services. Second, place <strong>canonical document checklists</strong> adjacent to the action they gate (for example,
+              beside &ldquo;Start replacement&rdquo; or &ldquo;Prepare for visit&rdquo;), rather than relying on long-form pages alone.
+            </p>
+            <p>
+              Third, replace opaque multi-hop initiation for high-risk workflows with a <strong>guided stepper</strong> that surfaces prerequisites, fees, and wait
+              expectations before routing to external schedulers. Compared with the current product, the prototype trades some immediate information
+              density on the homepage for a clearer <strong>progress model</strong>; the benefit is fewer backtracks and lower cognitive load during stress. Fourth,
+              elevate <strong>center discovery</strong> to a primary module with zip or county entry, service filters, and hours in the results list, reducing visual
+              competition from secondary announcements.
+            </p>
+            <p>
+              Fifth, maintain an explicit <strong>plain-language layer</strong> (&ldquo;I need to&hellip;&rdquo;) backed by the same authoritative sources, so efficiency gains do
+              not come at the cost of policy drift. Trade-offs include additional content maintenance when rules change; we mitigate that risk by binding
+              checklist modules to structured content types in CMS templates rather than one-off marketing blocks.
+            </p>
+            <p>
+              Against usability attributes, these changes strengthen <strong>learnability</strong> (clearer first steps), <strong>efficiency</strong> (shorter successful paths),
+              <strong>error tolerance</strong> (fewer wrong-section entries), and <strong>accessibility</strong> (predictable headings, larger tap targets, and reduced reliance on
+              fine-print scanning). The comparisons below are <strong>illustrative wireframes</strong> synthesized from session themes; where permitted, replace them
+              with pixel-accurate screen captures for legal archives.
+            </p>
+          </div>
+
+          <h2 class="font-serif" style="margin-top: 2.5rem; font-size: 1.75rem">Before and after comparisons</h2>
+          <p class="font-sans small muted" style="margin-bottom: 1.5rem">
+            Each pair is a single visual unit: left column shows the friction pattern; right column shows the prototype counter-pattern.
+          </p>
+
+          <h3 class="font-serif" style="font-size: 1.25rem">1. Parallel navigation labels</h3>
+          <div class="compare-grid hard-shadow-hover">
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <img
+                src="/images/compare-before-1.svg"
+                width="640"
+                height="360"
+                alt="Wireframe of three similar top navigation items labeled appointments, driver services, and license ID with dense text below."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.1 &mdash; Similar silo titles increased wrong-section starts.
+              </figcaption>
+            </figure>
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <img
+                src="/images/compare-after-1.svg"
+                width="640"
+                height="360"
+                alt="Wireframe showing a primary schedule button, online services entry, and an I need to row listing common tasks with a checklist column."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.2 &mdash; Primary actions and intent phrases reduce ambiguity.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-top: 2rem">2. Document requirements buried in prose</h3>
+          <div class="compare-grid hard-shadow-hover">
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <img
+                src="/images/compare-before-2.svg"
+                width="640"
+                height="360"
+                alt="Wireframe of a single long column of text blocks with a small PDF link icon easy to overlook."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.3 &mdash; Late discovery of canonical lists (see Fig. 1.5 on Data page).
+              </figcaption>
+            </figure>
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <img
+                src="/images/compare-after-2.svg"
+                width="640"
+                height="360"
+                alt="Wireframe with a bordered checklist for Real ID items and a parallel column explaining why the order matters."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.4 &mdash; Checklist module adjacent to explanatory context.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-top: 2rem">3. Lost-license replacement without a visible path</h3>
+          <div class="compare-grid hard-shadow-hover">
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <img
+                src="/images/compare-before-3.svg"
+                width="640"
+                height="360"
+                alt="Diagram of three sequential generic page boxes connected by arrows suggesting fragmented steps."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.5 &mdash; Multi-hop structure correlated with highest median time (Fig. 1.2).
+              </figcaption>
+            </figure>
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <img
+                src="/images/compare-after-3.svg"
+                width="640"
+                height="360"
+                alt="Wireframe of a numbered three-step vertical wizard plus a dark summary sidebar for fees and forms."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.6 &mdash; Guided flow with persistent summary panel.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-top: 2rem">4. Service center discovery competing with secondary links</h3>
+          <div class="compare-grid hard-shadow-hover">
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <img
+                src="/images/compare-before-4.svg"
+                width="640"
+                height="360"
+                alt="Wireframe with a map area beside a vertical stack of five equal-weight link rows and a busy header row."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.7 &mdash; Equal visual weight obscures the fastest path to hours and distance.
+              </figcaption>
+            </figure>
+            <figure class="compare-grid__panel">
+              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <img
+                src="/images/compare-after-4.svg"
+                width="640"
+                height="360"
+                alt="Wireframe with a black header strip find a center, zip and filter fields, large map, and a list of centers with miles and hours."
+              />
+              <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
+                Fig. 2.8 &mdash; Locator-first layout with scannable results.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--invert newsprint-texture" aria-labelledby="proto-heading">
+        <div class="container">
+          <p class="section__label">Interactive artifact</p>
+          <h2 id="proto-heading">High-fidelity prototype</h2>
+          <p class="prose" style="max-width: 68ch">
+            At the following link you will find our fully interactive prototype suitable for desktop review sessions with product and engineering
+            stakeholders. The embed below mirrors that experience for readers of this static report; if the frame is blocked by your network policy,
+            open the new-tab link directly.
+          </p>
+          <p class="font-sans" style="margin: 1rem 0 1.5rem">
+            <a
+              class="btn btn--outline"
+              style="border-color: #f9f9f7; color: #f9f9f7"
+              href="https://www.figma.com/proto/fvv73CSvGFZGeVAT1CDHKf/DDS-In-class-Update--Copy-?node-id=1-2&amp;t=c0cX8uZy8gwhoTWD-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A99"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Figma prototype (new tab)</a>
+          </p>
+          <div class="figma-wrap sharp-corners">
+            <iframe
+              title="Embedded Figma prototype of the redesigned Georgia DDS experience"
+              src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2Ffvv73CSvGFZGeVAT1CDHKf%2FDDS-In-class-Update--Copy-%3Fnode-id%3D1-2%26t%3Dc0cX8uZy8gwhoTWD-0%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A99"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+            <p class="font-mono small" style="margin: 0; padding: 0.5rem 1rem; background: #f9f9f7; color: #525252; border-top: 1px solid #111">
+              Fig. 2.9 &mdash; Embedded prototype viewer. Source file: DDS In-class Update (Copy) in Figma.
+            </p>
+          </div>
+          <p class="font-mono small muted" style="margin-top: 1rem">
+            Direct URL:
+            https://www.figma.com/proto/fvv73CSvGFZGeVAT1CDHKf/DDS-In-class-Update--Copy-?node-id=1-2&amp;t=c0cX8uZy8gwhoTWD-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A99
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="conclusion-heading">
+        <div class="container">
+          <p class="section__label">Closing argument</p>
+          <h2 id="conclusion-heading">Conclusion</h2>
+          <div class="prose">
+            <p>
+              This project reinforced a durable lesson at the intersection of UI design and user behavior: <strong>comprehensive government websites often fail
+              in the handoff between taxonomy and task identity.</strong> Participants forgave visual austerity; they did not forgive uncertainty about which door
+              to open first. Our process combined low-N behavioral measurement with tight qualitative coding, then translated patterns into a prototype
+              that treats clarity as a service-level requirement.
+            </p>
+            <p>
+              Next steps for a production program would include A/B or staged rollout on prioritized entry routes, instrumentation for first-click paths,
+              and accessibility audits (WCAG 2.2) on the stepper and locator templates. We recommend pairing design QA with content governance so
+              checklist modules remain synchronized with policy updates.
+            </p>
+            <p>
+              <strong>Hand-off to engineering:</strong> Treat the prototype as a contract for <em>states</em>, not just screens. Implement navigation and stepper flows as
+              explicit route graphs with analytics hooks at each decision point; expose document requirements as structured data consumed by both web
+              and kiosk channels; and preserve deep links from legacy bookmarks via redirects mapped to the new intent layer. We welcome a technical
+              spike on search indexing of checklist snippets to support users who still arrive through external search. That alignment will make the
+              design measurable rather than decorative.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <strong class="font-serif" style="font-size: 1rem; letter-spacing: 0; text-transform: none">Recommendations folio</strong>
+          <p style="margin: 0.5rem 0 0; max-width: 52ch; text-transform: none; letter-spacing: 0.04em; line-height: 1.5">
+            Figma embed requires network access. For GitHub Pages, commit this folder and enable Pages from the branch root.
+          </p>
+        </div>
+        <div>
+          <p style="margin: 0">Evidence</p>
+          <p style="margin: 0.25rem 0 0"><a href="/data.html">&larr; Data</a></p>
+        </div>
+        <div>
+          <p style="margin: 0">Title</p>
+          <p style="margin: 0.25rem 0 0"><a href="/">&larr; Home</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

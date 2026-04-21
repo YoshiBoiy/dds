@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="ta2 da2">
+  <title id="ta2">After: checklist module with plain-language categories</title>
+  <desc id="da2">Wireframe with a bordered checklist panel, identity residency headings, and download link placed adjacent to the checklist.</desc>
+  <rect width="640" height="360" fill="#F9F9F7"/>
+  <rect x="16" y="16" width="300" height="320" fill="#fff" stroke="#111111"/>
+  <text x="28" y="44" font-family="sans-serif" font-size="12" fill="#111111" font-weight="bold">Real ID · What to bring</text>
+  <rect x="28" y="60" width="260" height="1" fill="#111111"/>
+  <rect x="28" y="76" width="12" height="12" fill="#fff" stroke="#111111"/>
+  <text x="48" y="86" font-family="sans-serif" font-size="10" fill="#111111">Proof of identity</text>
+  <rect x="28" y="96" width="12" height="12" fill="#fff" stroke="#111111"/>
+  <text x="48" y="106" font-family="sans-serif" font-size="10" fill="#111111">Proof of residency (2 documents)</text>
+  <rect x="28" y="116" width="12" height="12" fill="#fff" stroke="#111111"/>
+  <text x="48" y="126" font-family="sans-serif" font-size="10" fill="#111111">SSN evidence (if applicable)</text>
+  <rect x="28" y="150" width="120" height="28" fill="#111111"/>
+  <text x="36" y="168" font-family="sans-serif" font-size="9" fill="#F9F9F7">Download PDF</text>
+  <rect x="332" y="16" width="292" height="320" fill="#E5E5E0" stroke="#111111"/>
+  <text x="348" y="44" font-family="sans-serif" font-size="11" fill="#111111">Why this order</text>
+  <rect x="348" y="60" width="260" height="8" fill="#111111" opacity="0.15"/>
+  <rect x="348" y="76" width="240" height="8" fill="#111111" opacity="0.15"/>
+  <rect x="348" y="92" width="250" height="8" fill="#111111" opacity="0.15"/>
+</svg>

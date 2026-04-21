@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Representative before state: parallel top-level categories</title>
+  <desc id="d1">Wireframe showing three similar navigation labels and dense body copy, illustrating participant confusion before redesign.</desc>
+  <rect width="640" height="360" fill="#F9F9F7"/>
+  <rect x="0" y="0" width="640" height="48" fill="#E5E5E0" stroke="#111111"/>
+  <text x="16" y="32" font-family="sans-serif" font-size="14" fill="#111111">georgia.gov / DDS</text>
+  <rect x="16" y="64" width="190" height="28" fill="#111111"/>
+  <rect x="220" y="64" width="190" height="28" fill="#111111" opacity="0.85"/>
+  <rect x="424" y="64" width="190" height="28" fill="#111111" opacity="0.85"/>
+  <text x="24" y="84" font-family="sans-serif" font-size="10" fill="#F9F9F7">Appointments</text>
+  <text x="228" y="84" font-family="sans-serif" font-size="10" fill="#F9F9F7">Driver Services</text>
+  <text x="432" y="84" font-family="sans-serif" font-size="10" fill="#F9F9F7">License / ID</text>
+  <rect x="16" y="112" width="608" height="220" fill="#fff" stroke="#111111"/>
+  <rect x="32" y="128" width="560" height="10" fill="#111111" opacity="0.2"/>
+  <rect x="32" y="148" width="520" height="10" fill="#111111" opacity="0.2"/>
+  <rect x="32" y="168" width="540" height="10" fill="#111111" opacity="0.2"/>
+  <rect x="32" y="188" width="500" height="10" fill="#111111" opacity="0.2"/>
+  <rect x="32" y="220" width="200" height="14" fill="#CC0000" opacity="0.35"/>
+  <text x="32" y="300" font-family="sans-serif" font-size="11" fill="#525252">Required documents mentioned mid-page; users scroll repeatedly.</text>
+</svg>

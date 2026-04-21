@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Georgia DDS Usability Study &mdash; Technical Report (Home)</title>
+    <meta
+      name="description"
+      content="Formal usability study and redesign rationale for the Georgia Department of Driver Services public website."
+    />
+    <link rel="stylesheet" href="/css/newsprint.css" />
+  </head>
+  <body class="sharp-corners font-body">
+    <a class="skip-link font-sans" href="#main">Skip to main content</a>
+    <div class="meta-strip">Vol. 1 &middot; Apr 21, 2026 &middot; Atlanta edition &middot; Confidential draft for course submission</div>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="site-title"><a href="/">Georgia DDS Digital Services</a></p>
+        <nav class="nav-main font-sans" aria-label="Primary">
+          <a href="/" aria-current="page">Home</a>
+          <a href="/data.html">Data</a>
+          <a href="/recommendations.html">Recommendations</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span><span class="badge">Finding</span> Parallel labels increased wrong-section starts &middot;</span>
+        <span><span class="badge">Metric</span> Median task time exceeded target on 3 of 7 tasks &middot;</span>
+        <span><span class="badge">Prototype</span> Prioritized actions + guided flows &middot;</span>
+        <span><span class="badge">Finding</span> Document requirements discovered late &middot;</span>
+        <span><span class="badge">Metric</span> Mid-range confidence scores across cohort &middot;</span>
+        <span><span class="badge">Prototype</span> Checklist modules adjacent to tasks &middot;</span>
+        <span><span class="badge">Finding</span> Parallel labels increased wrong-section starts &middot;</span>
+        <span><span class="badge">Metric</span> Median task time exceeded target on 3 of 7 tasks &middot;</span>
+        <span><span class="badge">Prototype</span> Prioritized actions + guided flows &middot;</span>
+        <span><span class="badge">Finding</span> Document requirements discovered late &middot;</span>
+        <span><span class="badge">Metric</span> Mid-range confidence scores across cohort &middot;</span>
+        <span><span class="badge">Prototype</span> Checklist modules adjacent to tasks &middot;</span>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="hero newsprint-texture" aria-labelledby="page-title">
+        <div class="hero__grid">
+          <div class="hero__banner">
+            <img
+              src="/images/banner-dds-study.svg"
+              width="1600"
+              height="420"
+              alt="Newsprint-style editorial banner with Georgia DDS headline, grid texture, and study keywords for accessibility."
+            />
+            <p class="hero__banner-caption">
+              Fig. 0.1 &mdash; Study masthead (vector). Alt text describes graphic elements for screen readers.
+            </p>
+          </div>
+          <div class="hero__content">
+            <p class="hero__kicker">Technical report &middot; usability engineering</p>
+            <h1 id="page-title">Improving discoverability on Georgia&rsquo;s DDS website</h1>
+            <p class="hero__authors font-sans">
+              <strong>Authors (Group&nbsp;5):</strong> [Student Name&nbsp;1], [Student Name&nbsp;2], [Student Name&nbsp;3], [Student Name&nbsp;4],
+              [Student Name&nbsp;5] &mdash; <span class="muted">replace bracketed placeholders with your roster before submission.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="summary-heading">
+        <div class="container">
+          <p class="section__label">Executive digest</p>
+          <h2 id="summary-heading">Summary</h2>
+          <div class="summary-box hard-shadow-hover">
+            <p class="dropcap">
+              The Georgia Department of Driver Services (DDS) website supports high-stakes tasks&mdash;appointments, renewals, Real ID preparation, and
+              replacements&mdash;yet our moderated usability sessions showed that correct information was frequently <strong>present but poorly surfaced</strong>.
+              Participants could often eventually succeed, but the path required redundant scanning, backtracking between similarly labeled areas (for
+              example, <strong>Appointments</strong>, <strong>Driver Services</strong>, and <strong>License/ID</strong>), and slow recovery when document requirements appeared deep in
+              long-form pages.
+            </p>
+            <p>
+              We executed seven task-based scenarios spanning scheduling, compliance research, loss replacement, and center location. Behavioral metrics
+              (completion, time-on-task, error counts, and self-reported confidence) clustered in a <strong>mid-range band</strong>, signaling a service that is usable
+              in principle but not efficient in practice. Qualitative notes and screen observations consistently pointed to <strong>information architecture</strong>
+              and <strong>progressive disclosure</strong> problems rather than missing content.
+            </p>
+            <p>
+              Our high-fidelity prototype preserves comprehensive policy detail while reorganizing the interface around <strong>primary citizen intents</strong>, clearer
+              section semantics, and guided flows for multi-step processes (notably lost-license replacement). The design intent is to reduce wrong-section
+              entries, shorten document discovery time, and increase confidence for first-time completion.
+            </p>
+            <p>
+              The study&rsquo;s implications extend beyond visual polish: DDS serves millions of drivers in Georgia, so incremental friction aggregates into
+              measurable social cost (unprepared visits, delayed renewals, and support demand). By pairing strict behavioral criteria with participant
+              language, we aimed to produce evidence that product and engineering leaders can trace from chart to interface control.
+            </p>
+            <p>
+              <strong>Key takeaway:</strong> Stakeholders should treat navigation labeling, task-level checklists, and guided process templates as first-class product
+              requirements for citizen-facing government services. The evidence package on the Data page quantifies where friction concentrates; the
+              Recommendations page maps each issue to a concrete UI response and an interactive Figma prototype suitable for engineering review.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament" aria-hidden="true">&#10022; &#10022; &#10022;</div>
+
+      <section class="section newsprint-texture" aria-labelledby="intro-heading">
+        <div class="container">
+          <p class="section__label">Orientation</p>
+          <h2 id="intro-heading">Introduction</h2>
+          <div class="prose">
+            <p>
+              Digital channels for motor-safety administration carry an unusual burden: they must remain legally precise while remaining legible to
+              distracted users under time pressure. Georgia&rsquo;s DDS web presence is a <strong>critical state service</strong> for millions of licensed drivers; small
+              navigation failures compound into missed appointments, unprepared visits, and support load. Our team selected this product because its scale,
+              regulatory complexity, and heterogeneous users create a representative case for enterprise information architecture, where completeness and
+              clarity are often assumed to trade against one another.
+            </p>
+            <p>
+              The current site exposes a large taxonomy of services. In practice, citizens arrive with <strong>task identities</strong> (&ldquo;I lost my license,&rdquo; &ldquo;I need Real
+              ID proof,&rdquo; &ldquo;I need a road test&rdquo;) rather than department-internal categories. When top-level labels overlap in meaning, users must guess which
+              silo contains their answer. We hypothesized that this structural ambiguity would inflate exploratory clicking, increase time-on-task variance,
+              and depress confidence even when answers exist on-page.
+            </p>
+            <p>
+              We further hypothesized that <strong>document requirements</strong>, which carry high consequence if misunderstood, were vulnerable to late discovery because
+              they frequently appeared inside dense paragraphs rather than adjacent to the action they gate. Finally, we expected multi-page processes (for
+              example, replacement after loss) to show higher abandonment or repeated navigation loops, because users lack a visible progress model tying steps
+              together.
+            </p>
+            <p>
+              This report documents how those hypotheses were operationalized into tasks and metrics, what the mixed-methods evidence showed, and how the
+              prototype responds without sacrificing the comprehensiveness stakeholders require. The tone is deliberately analytical: our goal is not
+              stylistic preference but <strong>measurable task improvement</strong> justified by observed behavior and participant statements.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <strong class="font-serif" style="font-size: 1rem; letter-spacing: 0; text-transform: none">Georgia DDS study</strong>
+          <p style="margin: 0.5rem 0 0; max-width: 52ch; text-transform: none; letter-spacing: 0.04em; line-height: 1.5">
+            Prepared for a graduate/partner audience of product and engineering stakeholders. Figures are illustrative where screenshots cannot be
+            reproduced; claims remain tied to study instruments described on the Data page.
+          </p>
+        </div>
+        <div>
+          <p style="margin: 0">Edition</p>
+          <p style="margin: 0.25rem 0 0">Web &middot; v1.0</p>
+        </div>
+        <div>
+          <p style="margin: 0">Contact</p>
+          <p style="margin: 0.25rem 0 0">Group&nbsp;5 &middot; course mailbox</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
