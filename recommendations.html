@@ -27,27 +27,25 @@
           <h1 id="rec-heading">Recommendations</h1>
           <div class="prose">
             <p>
-              Our recommendations translate the Data page metrics into <strong>IA, layout, and interaction</strong> changes that preserve legal completeness
-              while reducing wrong-path starts. Each item below corresponds to at least one measured behavior from the usability sessions and is mapped to
-              a usability attribute so that engineering and product partners can prioritize against known heuristics.
+              Our recommendations turn the data on the previous page into specific changes to the site&rsquo;s navigation, layout, and interactions. Each
+              one targets a measurable problem we saw in testing and connects to a specific usability attribute.
             </p>
             <p>
-              <strong>1. Re-segment top-level navigation.</strong> Scheduling, transactional online services, and educational compliance content should
-              use distinct verbs and destinations rather than the current parallel labels (<em>Appointments</em>, <em>Driver Services</em>,
-              <em>License/ID</em>). This directly targets the 80% first-click inaccuracy cluster between appointments and general services (Fig.&nbsp;1.3)
-              and strengthens <strong>learnability</strong> by making the first choice on the page meaningfully different from its neighbors. The trade-off
-              is disruption for returning users who memorized the old labels; we mitigate this with redirects from legacy URLs and a transition period
-              where both taxonomies resolve.
+              <strong>1. Re-label the top-level navigation.</strong> Right now, <em>Appointments</em>, <em>Driver Services</em>, and <em>License/ID</em>
+              sound like they could all hold the answer to any given question. That ambiguity caused 80% first-click inaccuracy on scheduling tasks. Our
+              prototype uses more distinct labels and separates scheduling, online transactions, and educational content into clearly different sections.
+              This makes the site more <strong>learnable</strong>&mdash;users can tell what each section is for at a glance. The trade-off is that
+              returning users who memorized the old labels will need to re-learn, but we&rsquo;d handle this with redirects from old URLs during a
+              transition period.
             </p>
             <p>
-              <strong>2. Surface document checklists adjacent to their gating action.</strong> Real ID and replacement tasks produced the most
-              late-discovery events (Fig.&nbsp;1.5) because required-document lists were embedded inside long-form prose or linked PDFs. Placing a
-              bordered checklist module next to &ldquo;Start replacement&rdquo; or &ldquo;Prepare for visit&rdquo; reduces median time-on-task
-              (Fig.&nbsp;1.2) and strengthens <strong>error tolerance</strong>: users are less likely to arrive at a service center missing a document.
-              The maintenance trade-off&mdash;duplicating policy text across modules&mdash;is addressed by binding checklists to structured CMS content
-              types so a single source updates every surface.
+              <strong>2. Put document checklists next to the action they go with.</strong> Real ID and lost-license tasks had the most late-discovery
+              events, because the list of required documents is usually inside long paragraphs or hidden in a linked PDF. Our prototype puts a clearly
+              boxed checklist right next to buttons like &ldquo;Start replacement&rdquo; or &ldquo;Prepare for your visit.&rdquo; This cuts down on
+              time-on-task and improves <strong>error tolerance</strong>&mdash;users are much less likely to show up missing a document. The maintenance
+              trade-off is that the same information appears in more places, which we&rsquo;d solve by pulling from a shared data source so a single
+              update changes every spot.
             </p>
-
           </div>
 
           <h2 class="font-serif" style="margin-top: 2.5rem; font-size: 1.75rem">Before and after comparisons</h2>
@@ -209,15 +207,16 @@
           <h2 id="conclusion-heading">Conclusion</h2>
           <div class="prose">
             <p>
-              We realized government websites often fail
-              in the handoff between taxonomy and task identity. Participants forgave visual austerity; they did not forgive uncertainty about which door
-              to open first. Our process combined low-N behavioral measurement with tight qualitative coding, then translated patterns into a prototype
-              that treats clarity as a service-level requirement.
+              We realized that for a site like DDS, the biggest usability issues aren&rsquo;t about missing features or visual polish&mdash;they&rsquo;re
+              about how information is organized and how users find their way through it. Participants were generally patient with a plain-looking
+              interface, but they weren&rsquo;t patient with ambiguity about which section to try first or where a required document was hiding. Our
+              process combined quick quantitative measurements (task success, time, first-click accuracy) with qualitative notes and quotes, which let
+              us point to specific parts of the UI with real evidence instead of opinions.
             </p>
             <p>
-              Next steps for a production program would include A/B or staged rollout on prioritized entry routes, instrumentation for first-click paths,
-              and accessibility audits on the stepper and locator templates. We recommend pairing design QA with content governance so
-              checklist modules remain synchronized with policy updates.
+              Next steps for a real production rollout would include A/B testing the new navigation labels on a subset of users, adding analytics to
+              track first-click paths after the redesign, and running an accessibility audit on the stepper and locator components. We&rsquo;d also want
+              to set up a process so that the checklist modules stay in sync with policy updates as DDS rules change.
             </p>
           </div>
         </div>

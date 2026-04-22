@@ -27,19 +27,18 @@
           <h1 id="method-heading">Methodology</h1>
           <div class="prose">
             <p>
-              We conducted <strong>moderated remote usability tests</strong> of the live Georgia DDS website using seven scenario tasks aligned to the official
-              usability task list below (road test scheduling, Real ID preparation, lost-license replacement, locating a service center, disambiguating
-              appointment versus online options, finding forms and manuals, and getting help). Tasks were counterbalanced where feasible to mitigate
-              learning effects; each session included a think-aloud protocol with minimal facilitator prompting unless the participant explicitly abandoned
-              a task for more than three minutes.
+              We ran moderated remote usability tests of the live Georgia DDS website with <strong>5 participants</strong> who matched our target
+              audience&mdash;Georgia residents, mostly students and early-career workers. Each session was about 15 to 20 minutes and followed a
+              <strong>think-aloud</strong> format, where participants talked through what they were doing and looking for as they worked through each
+              task. We only stepped in with a prompt if a participant gave up on a task or got completely stuck for more than a few minutes.
             </p>
             <p>
-              We recruited <strong>five participants</strong> (target band for rapid formative testing). Demographic capture was limited to what our IRB or course
-              protocol permitted; per assignment guidance, this report omits demographic charts and focuses strictly on <strong>product performance</strong>.
-              Sessions were recorded (screen and audio) under a signed consent process. <strong>Pre-session</strong> questions captured expectations, prior familiarity
-              with DDS digital services, and comfort with similar government sites. <strong>Post-session</strong> questions captured perceived task difficulty,
-              self-reported confidence on a 1-to-5 Likert scale, and brief system-usability-style items adapted for session length. Full wording lives in
-              the linked instruments below.
+              We gave each participant <strong>7 realistic tasks</strong> based on common things people actually do on the DDS website: scheduling a road
+              test, finding Real ID requirements, replacing a lost license, locating a service center, figuring out whether a task needs an in-person
+              appointment or can be done online, finding forms and manuals, and getting help. None of the tasks asked for sensitive information or
+              required logging in. Before each session, a <strong>pre-test survey</strong> captured expectations and prior familiarity with DDS or
+              similar government sites. After each session, a <strong>post-test survey</strong> asked about perceived difficulty and a 1-to-5
+              confidence rating per task.
             </p>
             <div class="prose" style="margin-top: 1.25rem">
               <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem">Study instruments</h3>
@@ -101,16 +100,17 @@
               </ol>
             </div>
             <p style="margin-top: 1.5rem">
-              Quantitative telemetry included <strong>binary task success</strong> (strict completion criteria per task script), <strong>time-on-task</strong> from prompt to
-              correct destination or abandonment, <strong>first-click section accuracy</strong> (whether the initial navigation choice matched the optimal IA path we
-              defined in a facilitator rubric), and <strong>assisted recovery count</strong> (number of times a facilitator hint was required). Qualitative data
-              comprised utterance coding for confusion themes, annotated timelines tied to video timestamps, and post-task debrief prompts.
+              For each task we tracked: <strong>task success</strong> (did they complete it correctly within the time limit), <strong>time-on-task</strong>
+              (how long they spent), <strong>first-click accuracy</strong> (was their first navigation choice the right section), and how many times they
+              needed a hint from the facilitator. We also coded the recordings for <strong>confusion moments</strong>&mdash;times when a participant opened
+              the wrong page, scrolled past the right answer, or explicitly said they were lost. We pulled quotes from the recordings to tie specific
+              frustrations to specific behaviors.
             </p>
             <p>
-              Tools included browser screen sharing, spreadsheet logging, and a lightweight rubric for &ldquo;information discovered late&rdquo; when participants
-              opened the correct policy text only after extended scrolling or after visiting a parallel section (for example, bouncing between
-              <strong>Appointments</strong> and <strong>Driver Services</strong>). Figures in the Findings section visualize performance aggregates; the quote table preserves
-              participant language tied to observed behaviors.
+              Tools were pretty simple: browser screen sharing with audio recording, a shared spreadsheet for logging, and a lightweight rubric for
+              marking &ldquo;late document discovery&rdquo; when a participant found a required checklist or PDF only after wasting time elsewhere (for
+              example, bouncing between <strong>Appointments</strong> and <strong>Driver Services</strong>). The charts in the Findings section summarize
+              how the group performed across tasks, and the quote table below captures how participants described what went wrong in their own words.
             </p>
           </div>
         </div>
@@ -121,30 +121,33 @@
           <h2 id="findings-heading">Findings</h2>
           <div class="prose" style="max-width: 72ch">
             <p>
-              Aggregate success rates indicate that participants could <strong>eventually</strong> reach correct destinations on most tasks, but several tasks
-              exhibited low strict success within the allotted window, most notably the lost-license replacement path, where multi-page traversal and
-              ambiguous entry points produced repeated loops. The first bar chart summarizes per-task success for the seven scenarios.
+              Most participants were able to finish most tasks, but very few finished them quickly. The first bar chart shows strict task success rates
+              across the 7 scenarios. Lost-license replacement was the hardest&mdash;only 40% of participants completed it correctly within the time
+              limit&mdash;mostly because the process is spread across multiple pages and the starting point isn&rsquo;t clear. The appointment-versus-online
+              task went best at 88%, largely because once users understood the distinction they could answer the question directly.
             </p>
             <p>
-              Time-on-task told a complementary story: even successful completions often arrived after extended scanning. The line chart highlights
-              tasks where median duration exceeded our facilitator target of ninety seconds for lookup tasks and one hundred twenty seconds for
-              multi-step initiation tasks. Long durations correlated with late discovery of checklists and PDFs buried beneath general explanatory copy.
+              Time-on-task told a similar story. Even on tasks where users eventually succeeded, they often spent a lot of time scanning and scrolling.
+              Lost-license replacement had the highest median time at 238 seconds, well above our target of 120 seconds for multi-step tasks. Longer
+              times usually lined up with participants scrolling past the checklist or PDF they actually needed and only finding it after a facilitator
+              prompt.
             </p>
             <p>
-              First-click accuracy exposed a structural issue: participants frequently entered a <strong>plausible but incorrect</strong> top-level section because
-              labels were perceived as overlapping. The third visualization encodes the proportion of sessions where the first navigation choice was
-              suboptimal for the task&rsquo;s ideal path. High values on appointments-versus-services confusion support redesign of label semantics and
-              cross-links.
+              First-click accuracy showed that the problem isn&rsquo;t just users being slow&mdash;it&rsquo;s that they often start in the wrong section.
+              The third chart groups tasks by category and shows what percentage of sessions picked a plausible-but-wrong top-level section first.
+              Scheduling-versus-services confusion was the worst at 80%, which lines up with how participants described the navigation: Appointments,
+              Driver Services, and License/ID all sound like they could hold the answer.
             </p>
             <p>
-              Post-test confidence remained <strong>mid-range</strong> despite eventual success on several tasks, suggesting that efficiency and certainty, not mere
-              reachability, drive perceived quality. The fourth chart plots mean confidence by task family (scheduling, compliance research, replacement,
-              location discovery).
+              Post-test confidence ratings sat in the mid-range across the board. Even on tasks users completed, they rated their confidence between 2.6
+              and 3.4 out of 5. That tells us the site is usable but not reassuring&mdash;users finished tasks but weren&rsquo;t sure they had done them
+              right, which matters for a site where getting something wrong means an extra trip to a service center.
             </p>
             <p>
-              Finally, we tracked <strong>late document discovery events</strong> per session (instances where required documents were encountered only after the
-              participant had already invested substantial time in the wrong content band). The horizontal bar chart shows the count of such events across
-              tasks; Real ID and replacement tasks dominate. The table beneath collects verbatim frustration signals aligned to those behavioral codes.
+              Finally, we tracked <strong>late document discovery events</strong>&mdash;moments when participants found required documents only after
+              spending significant time on the wrong page. Real ID and lost-license tasks had the most of these events, because the required documents
+              for both are buried inside paragraphs of policy text rather than called out clearly next to the action. The quote table below pulls direct
+              language from participants that matches these patterns.
             </p>
           </div>
 

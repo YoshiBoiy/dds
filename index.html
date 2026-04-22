@@ -51,28 +51,28 @@
           <h2 id="summary-heading">Summary</h2>
           <div class="summary-box hard-shadow-hover">
             <p>
-              The Georgia Department of Driver Services (DDS) website supports high-stakes tasks&mdash;appointments, renewals, Real ID preparation, and
-              replacements&mdash;yet our moderated usability sessions showed that correct information was frequently <strong>present but poorly surfaced</strong>.
-              Participants often eventually succeeded, but only after redundant scanning, backtracking between similarly labeled areas
-              (<strong>Appointments</strong>, <strong>Driver Services</strong>, and <strong>License/ID</strong>), and slow recovery when
-              document requirements appeared deep in long-form pages.
+              The Georgia DDS website is where people go to handle high-stakes tasks like scheduling a road test, renewing or replacing a license or ID,
+              finding the documents needed for Real ID, paying fees, and locating a service center. From our usability study, we found that most of the
+              information users need is already there, but it&rsquo;s often hard to find when you&rsquo;re in a hurry. Most participants finished their
+              tasks eventually, but only after bouncing between overlapping sections like <strong>Appointments</strong>, <strong>Driver Services</strong>,
+              and <strong>License/ID</strong>, or scanning through long blocks of text to find required documents.
             </p>
             <p>
-              We executed seven task-based scenarios spanning scheduling, compliance research, loss replacement, and center location with five
-              participants. Behavioral metrics&mdash;completion, time-on-task, error counts, and self-reported confidence&mdash;clustered in a
-              <strong>mid-range band</strong>, signaling a service that is usable in principle but not efficient in practice. Observations
-              consistently pointed to <strong>information architecture</strong> and <strong>progressive disclosure</strong> problems rather than
-              missing content.
+              We tested the site with 5 participants using 7 realistic tasks, covering scheduling, Real ID research, replacing a lost license, and
+              locating a service center. We tracked task success, time-on-task, misclicks, and confidence ratings. Across the board, scores landed in
+              the mid-range&mdash;the site works, but it&rsquo;s not efficient. Almost all of the confusion we saw came from how the information is
+              organized, not from missing content.
             </p>
             <p>
-              Our high-fidelity prototype preserves comprehensive policy detail while reorganizing the interface around <strong>primary citizen intents</strong>,
-              clearer section semantics, and guided flows for multi-step processes (notably lost-license replacement). The design intent is to reduce
-              wrong-section entries, shorten document discovery time, and increase first-attempt confidence.
+              Our high-fidelity prototype keeps the site&rsquo;s full detail but reorganizes it around what users are actually trying to do. We
+              simplified the top-level navigation, moved document checklists next to the action they go with, and built a step-by-step flow for the
+              lost-license replacement process. The goal is to reduce wrong-section clicks, help people find documents faster, and make users more
+              confident on their first try.
             </p>
             <p>
-              <strong>Key takeaway:</strong> stakeholders should treat navigation labeling, task-level checklists, and guided process templates as
-              first-class product requirements for citizen-facing government services. The Data page quantifies where friction concentrates; the
-              Recommendations page maps each issue to a concrete UI response and an interactive Figma prototype suitable for engineering review.
+              <strong>Key takeaway:</strong> for government sites like DDS, clearer labels, task-level checklists, and guided flows should be treated as
+              core requirements, not extras. The Data page shows where users got stuck and why; the Recommendations page walks through each change we
+              made and links to our interactive Figma prototype.
             </p>
           </div>
         </div>
@@ -86,39 +86,30 @@
           <h2 id="intro-heading">Introduction</h2>
           <div class="prose">
             <p>
-              Digital channels for motor-safety administration carry an unusual burden: they must remain legally precise while remaining legible to
-              distracted users under time pressure. Georgia&rsquo;s DDS web presence is a <strong>critical state service</strong> for millions of licensed drivers; small
-              navigation failures compound into missed appointments, unprepared visits, and support load. Our team selected this product because its scale,
-              regulatory complexity, and heterogeneous users create a representative case for enterprise information architecture, where completeness and
-              clarity are often assumed to trade against one another.
+              The Georgia DDS website is a critical state service. Over 7 million people in Georgia have a driver&rsquo;s license, and most of them
+              eventually need to use this site for something&mdash;renewing a license, scheduling a road test, finding out what documents they need, or
+              locating a service center. When the site is hard to navigate, the cost isn&rsquo;t just frustration. It means missed appointments, unprepared
+              visits, and extra calls to customer service. We chose DDS because it&rsquo;s a real, high-traffic service that people depend on, and small
+              navigation problems add up across millions of users.
             </p>
             <p>
-              The <strong>target user demographic</strong> is Georgia residents who need a license or ID service under time pressure&mdash;students,
-              early-career and working adults, and new drivers&mdash;rather than DMV specialists. Our working persona, &ldquo;Jordan,&rdquo; is a
-              moderately tech-comfortable college student or early-career worker who typically arrives on the site from a phone, late at night or
-              between classes and shifts, looking for a direct answer. Users in this band are not fluent in departmental terminology; they carry
-              task identities (&ldquo;renew my license,&rdquo; &ldquo;get Real ID,&rdquo; &ldquo;replace a lost card&rdquo;) and expect the
-              interface to translate those intents into next steps. This framing informed our task selection and severity judgments throughout
-              the study.
+              Our <strong>target users</strong> are Georgia residents who need a license or ID service, especially people who are under time
+              pressure&mdash;students, working adults, and new drivers. Most of them aren&rsquo;t DMV experts. They&rsquo;re trying to finish something
+              quickly on their phone or laptop, often late at night or between classes and work. Our working persona, &ldquo;Jordan,&rdquo; is a college
+              student or early-career worker who&rsquo;s moderately comfortable with technology but not familiar with DMV terminology. Jordan wants a
+              clear answer fast, without having to read through pages of policy text.
             </p>
             <p>
-              The current site exposes a large taxonomy of services. In practice, citizens arrive with <strong>task identities</strong> rather than
-              department-internal categories, and when top-level labels overlap in meaning, users must guess which silo contains their answer. We
-              hypothesized that this structural ambiguity would inflate exploratory clicking, increase time-on-task variance, and depress confidence
-              even when answers exist on-page. Early heuristic review reinforced the concern: a crowded homepage of announcements, parallel navigation
-              categories, and multiple redundant paths to the same action (Online Services, forms/manuals, chatbot) suggested an organizational rather
-              than content problem.
+              Going in, we had a few hypotheses about what might go wrong. The homepage has a lot of announcements, news, and overlapping navigation
+              categories (<strong>Appointments</strong>, <strong>Driver Services</strong>, <strong>License/ID</strong>), which we thought would make users
+              guess the wrong section on their first click. We also thought that required documents for Real ID and license replacement would be hard to
+              find because they&rsquo;re usually buried inside long paragraphs instead of shown next to the action they go with. And for multi-step tasks
+              like replacing a lost license, we expected users to lose track of where they were because there&rsquo;s no clear progress indicator.
             </p>
             <p>
-              We further hypothesized that <strong>document requirements</strong>, which carry high consequence if misunderstood, were vulnerable to late discovery because
-              they frequently appeared inside dense paragraphs rather than adjacent to the action they gate. Finally, we expected multi-page processes (for
-              example, replacement after loss) to show higher abandonment or repeated navigation loops, because users lack a visible progress model tying steps
-              together.
-            </p>
-            <p>
-              This report documents how those hypotheses were operationalized into tasks and metrics, what the mixed-methods evidence showed, and how the
-              prototype responds without sacrificing the comprehensiveness stakeholders require. The tone is deliberately analytical: our goal is not
-              stylistic preference but <strong>measurable task improvement</strong> justified by observed behavior and participant statements.
+              This report walks through how we tested those hypotheses, what we found, and how our prototype addresses the issues. We focused on
+              measurable problems&mdash;task success rates, time-on-task, first-click accuracy&mdash;so that the design decisions aren&rsquo;t just
+              opinions but are based on what we actually saw users do and say.
             </p>
           </div>
         </div>
