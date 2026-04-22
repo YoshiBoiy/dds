@@ -59,8 +59,7 @@
             <p class="hero__kicker">Technical report &middot; usability engineering</p>
             <h1 id="page-title">Improving discoverability on Georgia&rsquo;s DDS website</h1>
             <p class="hero__authors font-sans">
-              <strong>Group&nbsp;5:</strong> Yash Shelar, Vinay Gupta, Joel Sari, Tejas Khare,
-              Tanya Khurana
+              <strong>Group&nbsp;5:</strong> Joel David Sari, Tanya Khurana, Tejas Khare, Vinay Gupta, Yash Mahendra Shelar
             </p>
           </div>
         </div>
@@ -74,29 +73,25 @@
             <p class="dropcap">
               The Georgia Department of Driver Services (DDS) website supports high-stakes tasks&mdash;appointments, renewals, Real ID preparation, and
               replacements&mdash;yet our moderated usability sessions showed that correct information was frequently <strong>present but poorly surfaced</strong>.
-              Participants could often eventually succeed, but the path required redundant scanning, backtracking between similarly labeled areas (for
-              example, <strong>Appointments</strong>, <strong>Driver Services</strong>, and <strong>License/ID</strong>), and slow recovery when document requirements appeared deep in
-              long-form pages.
+              Participants often eventually succeeded, but only after redundant scanning, backtracking between similarly labeled areas
+              (<strong>Appointments</strong>, <strong>Driver Services</strong>, and <strong>License/ID</strong>), and slow recovery when
+              document requirements appeared deep in long-form pages.
             </p>
             <p>
-              We executed seven task-based scenarios spanning scheduling, compliance research, loss replacement, and center location. Behavioral metrics
-              (completion, time-on-task, error counts, and self-reported confidence) clustered in a <strong>mid-range band</strong>, signaling a service that is usable
-              in principle but not efficient in practice. Qualitative notes and screen observations consistently pointed to <strong>information architecture</strong>
-              and <strong>progressive disclosure</strong> problems rather than missing content.
+              We executed seven task-based scenarios spanning scheduling, compliance research, loss replacement, and center location with five
+              participants. Behavioral metrics&mdash;completion, time-on-task, error counts, and self-reported confidence&mdash;clustered in a
+              <strong>mid-range band</strong>, signaling a service that is usable in principle but not efficient in practice. Observations
+              consistently pointed to <strong>information architecture</strong> and <strong>progressive disclosure</strong> problems rather than
+              missing content.
             </p>
             <p>
-              Our high-fidelity prototype preserves comprehensive policy detail while reorganizing the interface around <strong>primary citizen intents</strong>, clearer
-              section semantics, and guided flows for multi-step processes (notably lost-license replacement). The design intent is to reduce wrong-section
-              entries, shorten document discovery time, and increase confidence for first-time completion.
+              Our high-fidelity prototype preserves comprehensive policy detail while reorganizing the interface around <strong>primary citizen intents</strong>,
+              clearer section semantics, and guided flows for multi-step processes (notably lost-license replacement). The design intent is to reduce
+              wrong-section entries, shorten document discovery time, and increase first-attempt confidence.
             </p>
             <p>
-              The study&rsquo;s implications extend beyond visual polish: DDS serves millions of drivers in Georgia, so incremental friction aggregates into
-              measurable social cost (unprepared visits, delayed renewals, and support demand). By pairing strict behavioral criteria with participant
-              language, we aimed to produce evidence that product and engineering leaders can trace from chart to interface control.
-            </p>
-            <p>
-              <strong>Key takeaway:</strong> Stakeholders should treat navigation labeling, task-level checklists, and guided process templates as first-class product
-              requirements for citizen-facing government services. The evidence package on the Data page quantifies where friction concentrates; the
+              <strong>Key takeaway:</strong> stakeholders should treat navigation labeling, task-level checklists, and guided process templates as
+              first-class product requirements for citizen-facing government services. The Data page quantifies where friction concentrates; the
               Recommendations page maps each issue to a concrete UI response and an interactive Figma prototype suitable for engineering review.
             </p>
           </div>
@@ -118,10 +113,21 @@
               clarity are often assumed to trade against one another.
             </p>
             <p>
-              The current site exposes a large taxonomy of services. In practice, citizens arrive with <strong>task identities</strong> (&ldquo;I lost my license,&rdquo; &ldquo;I need Real
-              ID proof,&rdquo; &ldquo;I need a road test&rdquo;) rather than department-internal categories. When top-level labels overlap in meaning, users must guess which
-              silo contains their answer. We hypothesized that this structural ambiguity would inflate exploratory clicking, increase time-on-task variance,
-              and depress confidence even when answers exist on-page.
+              The <strong>target user demographic</strong> is Georgia residents who need a license or ID service under time pressure&mdash;students,
+              early-career and working adults, and new drivers&mdash;rather than DMV specialists. Our working persona, &ldquo;Jordan,&rdquo; is a
+              moderately tech-comfortable college student or early-career worker who typically arrives on the site from a phone, late at night or
+              between classes and shifts, looking for a direct answer. Users in this band are not fluent in departmental terminology; they carry
+              task identities (&ldquo;renew my license,&rdquo; &ldquo;get Real ID,&rdquo; &ldquo;replace a lost card&rdquo;) and expect the
+              interface to translate those intents into next steps. This framing informed our task selection and severity judgments throughout
+              the study.
+            </p>
+            <p>
+              The current site exposes a large taxonomy of services. In practice, citizens arrive with <strong>task identities</strong> rather than
+              department-internal categories, and when top-level labels overlap in meaning, users must guess which silo contains their answer. We
+              hypothesized that this structural ambiguity would inflate exploratory clicking, increase time-on-task variance, and depress confidence
+              even when answers exist on-page. Early heuristic review reinforced the concern: a crowded homepage of announcements, parallel navigation
+              categories, and multiple redundant paths to the same action (Online Services, forms/manuals, chatbot) suggested an organizational rather
+              than content problem.
             </p>
             <p>
               We further hypothesized that <strong>document requirements</strong>, which carry high consequence if misunderstood, were vulnerable to late discovery because

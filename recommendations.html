@@ -28,29 +28,46 @@
           <h1 id="rec-heading">Recommendations</h1>
           <div class="prose">
             <p>
-              Our recommendations translate the Data page metrics into <strong>IA, layout, and interaction</strong> changes that preserve legal completeness while
-              reducing wrong-path starts. First, <strong>re-segment top-level navigation</strong> so that scheduling, transactional online services, and educational
-              compliance content use distinct verbs and destinations; this directly targets the first-click inaccuracy cluster observed between
-              appointments and general driver services. Second, place <strong>canonical document checklists</strong> adjacent to the action they gate (for example,
-              beside &ldquo;Start replacement&rdquo; or &ldquo;Prepare for visit&rdquo;), rather than relying on long-form pages alone.
+              Our recommendations translate the Data page metrics into <strong>IA, layout, and interaction</strong> changes that preserve legal completeness
+              while reducing wrong-path starts. Each item below corresponds to at least one measured behavior from the usability sessions and is mapped to
+              a usability attribute so that engineering and product partners can prioritize against known heuristics.
             </p>
             <p>
-              Third, replace opaque multi-hop initiation for high-risk workflows with a <strong>guided stepper</strong> that surfaces prerequisites, fees, and wait
-              expectations before routing to external schedulers. Compared with the current product, the prototype trades some immediate information
-              density on the homepage for a clearer <strong>progress model</strong>; the benefit is fewer backtracks and lower cognitive load during stress. Fourth,
-              elevate <strong>center discovery</strong> to a primary module with zip or county entry, service filters, and hours in the results list, reducing visual
-              competition from secondary announcements.
+              <strong>1. Re-segment top-level navigation.</strong> Scheduling, transactional online services, and educational compliance content should
+              use distinct verbs and destinations rather than the current parallel labels (<em>Appointments</em>, <em>Driver Services</em>,
+              <em>License/ID</em>). This directly targets the 80% first-click inaccuracy cluster between appointments and general services (Fig.&nbsp;1.3)
+              and strengthens <strong>learnability</strong> by making the first choice on the page meaningfully different from its neighbors. The trade-off
+              is disruption for returning users who memorized the old labels; we mitigate this with redirects from legacy URLs and a transition period
+              where both taxonomies resolve.
             </p>
             <p>
-              Fifth, maintain an explicit <strong>plain-language layer</strong> (&ldquo;I need to&hellip;&rdquo;) backed by the same authoritative sources, so efficiency gains do
-              not come at the cost of policy drift. Trade-offs include additional content maintenance when rules change; we mitigate that risk by binding
-              checklist modules to structured content types in CMS templates rather than one-off marketing blocks.
+              <strong>2. Surface canonical document checklists adjacent to their gating action.</strong> Real ID and replacement tasks produced the most
+              late-discovery events (Fig.&nbsp;1.5) because required-document lists were embedded inside long-form prose or linked PDFs. Placing a
+              bordered checklist module next to &ldquo;Start replacement&rdquo; or &ldquo;Prepare for visit&rdquo; reduces median time-on-task
+              (Fig.&nbsp;1.2) and strengthens <strong>error tolerance</strong>: users are less likely to arrive at a service center missing a document.
+              The maintenance trade-off&mdash;duplicating policy text across modules&mdash;is addressed by binding checklists to structured CMS content
+              types so a single source updates every surface.
             </p>
             <p>
-              Against usability attributes, these changes strengthen <strong>learnability</strong> (clearer first steps), <strong>efficiency</strong> (shorter successful paths),
-              <strong>error tolerance</strong> (fewer wrong-section entries), and <strong>accessibility</strong> (predictable headings, larger tap targets, and reduced reliance on
-              fine-print scanning). The comparisons below are <strong>illustrative wireframes</strong> synthesized from session themes; where permitted, replace them
-              with pixel-accurate screen captures for legal archives.
+              <strong>3. Replace multi-hop initiation with a guided stepper for high-risk workflows.</strong> The lost-license replacement task showed
+              both the lowest strict success (40%, Fig.&nbsp;1.1) and the highest median time (238 seconds, Fig.&nbsp;1.2). A numbered stepper with a
+              persistent summary panel surfaces prerequisites, fees, and wait expectations before routing to schedulers, improving <strong>efficiency</strong>
+              and giving users a visible progress model. This costs some homepage density, but we judge the trade worthwhile because the affected flow is
+              both high-consequence and low-frequency for any individual user.
+            </p>
+            <p>
+              <strong>4. Elevate center discovery to a primary, locator-first module.</strong> Equal visual weight between the map, announcements, and
+              secondary links pushed locator tasks to a 35% first-click-inaccuracy rate. A dedicated module with zip or county entry, service filters, and
+              hours in the results list reduces competing affordances, strengthening <strong>efficiency</strong> and <strong>accessibility</strong> (larger
+              tap targets, scannable results, predictable heading order). The visual trade is fewer simultaneously visible announcements, which we accept
+              because announcements are seasonal while locator needs are perennial.
+            </p>
+            <p>
+              <strong>5. Maintain an explicit plain-language intent layer (&ldquo;I need to&hellip;&rdquo;).</strong> Participants arrived with task
+              identities, not departmental categories; an intent layer backed by the same authoritative sources preserves policy precision while
+              improving <strong>learnability</strong> for first-time users. The trade-off is additional content governance&mdash;intent phrases must stay
+              synchronized with policy updates&mdash;which we mitigate by treating intents as CMS references to canonical pages rather than independently
+              authored copy.
             </p>
           </div>
 
