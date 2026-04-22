@@ -24,7 +24,6 @@
     <main id="main">
       <section class="section newsprint-texture" aria-labelledby="rec-heading">
         <div class="container">
-          <p class="section__label">Prescriptive design response</p>
           <h1 id="rec-heading">Recommendations</h1>
           <div class="prose">
             <p>
@@ -41,34 +40,14 @@
               where both taxonomies resolve.
             </p>
             <p>
-              <strong>2. Surface canonical document checklists adjacent to their gating action.</strong> Real ID and replacement tasks produced the most
+              <strong>2. Surface document checklists adjacent to their gating action.</strong> Real ID and replacement tasks produced the most
               late-discovery events (Fig.&nbsp;1.5) because required-document lists were embedded inside long-form prose or linked PDFs. Placing a
               bordered checklist module next to &ldquo;Start replacement&rdquo; or &ldquo;Prepare for visit&rdquo; reduces median time-on-task
               (Fig.&nbsp;1.2) and strengthens <strong>error tolerance</strong>: users are less likely to arrive at a service center missing a document.
               The maintenance trade-off&mdash;duplicating policy text across modules&mdash;is addressed by binding checklists to structured CMS content
               types so a single source updates every surface.
             </p>
-            <p>
-              <strong>3. Replace multi-hop initiation with a guided stepper for high-risk workflows.</strong> The lost-license replacement task showed
-              both the lowest strict success (40%, Fig.&nbsp;1.1) and the highest median time (238 seconds, Fig.&nbsp;1.2). A numbered stepper with a
-              persistent summary panel surfaces prerequisites, fees, and wait expectations before routing to schedulers, improving <strong>efficiency</strong>
-              and giving users a visible progress model. This costs some homepage density, but we judge the trade worthwhile because the affected flow is
-              both high-consequence and low-frequency for any individual user.
-            </p>
-            <p>
-              <strong>4. Elevate center discovery to a primary, locator-first module.</strong> Equal visual weight between the map, announcements, and
-              secondary links pushed locator tasks to a 35% first-click-inaccuracy rate. A dedicated module with zip or county entry, service filters, and
-              hours in the results list reduces competing affordances, strengthening <strong>efficiency</strong> and <strong>accessibility</strong> (larger
-              tap targets, scannable results, predictable heading order). The visual trade is fewer simultaneously visible announcements, which we accept
-              because announcements are seasonal while locator needs are perennial.
-            </p>
-            <p>
-              <strong>5. Maintain an explicit plain-language intent layer (&ldquo;I need to&hellip;&rdquo;).</strong> Participants arrived with task
-              identities, not departmental categories; an intent layer backed by the same authoritative sources preserves policy precision while
-              improving <strong>learnability</strong> for first-time users. The trade-off is additional content governance&mdash;intent phrases must stay
-              synchronized with policy updates&mdash;which we mitigate by treating intents as CMS references to canonical pages rather than independently
-              authored copy.
-            </p>
+
           </div>
 
           <h2 class="font-serif" style="margin-top: 2.5rem; font-size: 1.75rem">Before and after comparisons</h2>
@@ -87,7 +66,7 @@
                 alt="Wireframe of three similar top navigation items labeled appointments, driver services, and license ID with dense text below."
               />
               <figcaption class="font-mono small muted" style="margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em">
-                Fig. 2.1 &mdash; Similar silo titles increased wrong-section starts.
+                Fig. 2.1 &mdash; Similar titles increased wrong-section starts.
               </figcaption>
             </figure>
             <figure class="compare-grid__panel">
@@ -192,12 +171,10 @@
 
       <section class="section section--invert newsprint-texture" aria-labelledby="proto-heading">
         <div class="container">
-          <p class="section__label">Interactive artifact</p>
           <h2 id="proto-heading">High-fidelity prototype</h2>
           <p class="prose" style="max-width: 68ch">
             At the following link you will find our fully interactive prototype suitable for desktop review sessions with product and engineering
-            stakeholders. The embed below mirrors that experience for readers of this static report; if the frame is blocked by your network policy,
-            open the new-tab link directly.
+            stakeholders. 
           </p>
           <p class="font-sans" style="margin: 1rem 0 1.5rem">
             <a
@@ -232,22 +209,15 @@
           <h2 id="conclusion-heading">Conclusion</h2>
           <div class="prose">
             <p>
-              This project reinforced a durable lesson at the intersection of UI design and user behavior: <strong>comprehensive government websites often fail
-              in the handoff between taxonomy and task identity.</strong> Participants forgave visual austerity; they did not forgive uncertainty about which door
+              We realized government websites often fail
+              in the handoff between taxonomy and task identity. Participants forgave visual austerity; they did not forgive uncertainty about which door
               to open first. Our process combined low-N behavioral measurement with tight qualitative coding, then translated patterns into a prototype
               that treats clarity as a service-level requirement.
             </p>
             <p>
               Next steps for a production program would include A/B or staged rollout on prioritized entry routes, instrumentation for first-click paths,
-              and accessibility audits (WCAG 2.2) on the stepper and locator templates. We recommend pairing design QA with content governance so
+              and accessibility audits on the stepper and locator templates. We recommend pairing design QA with content governance so
               checklist modules remain synchronized with policy updates.
-            </p>
-            <p>
-              <strong>Hand-off to engineering:</strong> Treat the prototype as a contract for <em>states</em>, not just screens. Implement navigation and stepper flows as
-              explicit route graphs with analytics hooks at each decision point; expose document requirements as structured data consumed by both web
-              and kiosk channels; and preserve deep links from legacy bookmarks via redirects mapped to the new intent layer. We welcome a technical
-              spike on search indexing of checklist snippets to support users who still arrive through external search. That alignment will make the
-              design measurable rather than decorative.
             </p>
           </div>
         </div>
@@ -258,9 +228,6 @@
       <div class="site-footer__inner">
         <div>
           <strong class="font-serif" style="font-size: 1rem; letter-spacing: 0; text-transform: none">Recommendations folio</strong>
-          <p style="margin: 0.5rem 0 0; max-width: 52ch; text-transform: none; letter-spacing: 0.04em; line-height: 1.5">
-            Figma embed requires network access. For GitHub Pages, commit this folder and enable Pages from the branch root.
-          </p>
         </div>
         <div>
           <p style="margin: 0">Evidence</p>
