@@ -9,7 +9,7 @@
   </head>
   <body class="sharp-corners font-body">
     <a class="skip-link font-sans" href="#main">Skip to main content</a>
-    <div class="meta-strip">Vol. 1 &middot; Apr 21, 2026 &middot; Data folio &middot; Primary evidence</div>
+    <div class="meta-strip">Vol. 1 &middot; Apr 21, 2026 &middot; Primary evidence</div>
     <header class="site-header">
       <div class="site-header__inner">
         <p class="site-title"><a href="/">Georgia DDS Digital Services</a></p>
@@ -41,7 +41,7 @@
               confidence rating per task.
             </p>
             <div class="prose" style="margin-top: 1.25rem">
-              <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem">Study instruments</h3>
+              <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem">Study forms</h3>
               <ul style="margin: 0; padding-left: 1.25rem; max-width: 65ch">
                 <li style="margin-bottom: 0.35rem">
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FURZ_gKi2JTdhzbiIIKDAswn30Py8jEZZgUOTFtsMVrcLA/viewform?usp=header"
@@ -126,29 +126,6 @@
               limit&mdash;mostly because the process is spread across multiple pages and the starting point isn&rsquo;t clear. The appointment-versus-online
               task went best at 88%, largely because once users understood the distinction they could answer the question directly.
             </p>
-            <p>
-              Time-on-task told a similar story. Even on tasks where users eventually succeeded, they often spent a lot of time scanning and scrolling.
-              Lost-license replacement had the highest median time at 238 seconds, well above our target of 120 seconds for multi-step tasks. Longer
-              times usually lined up with participants scrolling past the checklist or PDF they actually needed and only finding it after a facilitator
-              prompt.
-            </p>
-            <p>
-              First-click accuracy showed that the problem isn&rsquo;t just users being slow&mdash;it&rsquo;s that they often start in the wrong section.
-              The third chart groups tasks by category and shows what percentage of sessions picked a plausible-but-wrong top-level section first.
-              Scheduling-versus-services confusion was the worst at 80%, which lines up with how participants described the navigation: Appointments,
-              Driver Services, and License/ID all sound like they could hold the answer.
-            </p>
-            <p>
-              Post-test confidence ratings sat in the mid-range across the board. Even on tasks users completed, they rated their confidence between 2.6
-              and 3.4 out of 5. That tells us the site is usable but not reassuring&mdash;users finished tasks but weren&rsquo;t sure they had done them
-              right, which matters for a site where getting something wrong means an extra trip to a service center.
-            </p>
-            <p>
-              Finally, we tracked <strong>late document discovery events</strong>&mdash;moments when participants found required documents only after
-              spending significant time on the wrong page. Real ID and lost-license tasks had the most of these events, because the required documents
-              for both are buried inside paragraphs of policy text rather than called out clearly next to the action. The quote table below pulls direct
-              language from participants that matches these patterns.
-            </p>
           </div>
 
           <figure class="chart-block">
@@ -182,79 +159,8 @@
             </svg>
           </figure>
 
-          <figure class="chart-block">
-            <svg class="chart-svg" viewBox="0 0 720 260" role="img" aria-labelledby="c2t c2d">
-              <title id="c2t">Line graph of median time-on-task in seconds</title>
-              <desc id="c2d">
-                Median times peak near 238 seconds for lost-license replacement and are lowest near 86 seconds for the appointment-versus-online task.
-              </desc>
-              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Median time-on-task (seconds)</text>
-              <polyline
-                fill="none"
-                stroke="#F9F9F7"
-                stroke-width="3"
-                points="40,190 130,150 220,40 310,120 400,200 490,160 580,140"
-              />
-              <g fill="#CC0000" stroke="#F9F9F7">
-                <circle cx="40" cy="190" r="5" />
-                <circle cx="130" cy="150" r="5" />
-                <circle cx="220" cy="40" r="5" />
-                <circle cx="310" cy="120" r="5" />
-                <circle cx="400" cy="200" r="5" />
-                <circle cx="490" cy="160" r="5" />
-                <circle cx="580" cy="140" r="5" />
-              </g>
-              <g font-size="10" fill="#A3A3A3" font-family="JetBrains Mono, monospace">
-                <text x="24" y="228">118s</text>
-                <text x="110" y="228">142s</text>
-                <text x="200" y="228">238s</text>
-                <text x="290" y="228">154s</text>
-                <text x="380" y="228">86s</text>
-                <text x="470" y="228">168s</text>
-                <text x="560" y="228">112s</text>
-              </g>
-            </svg>
-          </figure>
 
-          <figure class="chart-block">
-            <svg class="chart-svg" viewBox="0 0 720 220" role="img" aria-labelledby="c3t c3d">
-              <title id="c3t">Bar chart of first-click section inaccuracy rate by task group</title>
-              <desc id="c3d">
-                Inaccuracy rates range from 35 to 80 percent across four grouped categories, with appointments versus services confusion highest.
-              </desc>
-              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">First-click inaccuracy (suboptimal IA path)</text>
-              <g transform="translate(16,52)">
-                <rect x="0" y="40" width="480" height="28" fill="#CC0000" stroke="#F9F9F7" />
-                <text x="8" y="60" fill="#F9F9F7" font-size="11" font-family="JetBrains Mono, monospace">Scheduling vs. services ambiguity: 80%</text>
-                <rect x="0" y="84" width="330" height="28" fill="#F9F9F7" stroke="#F9F9F7" />
-                <text x="8" y="104" fill="#111111" font-size="11" font-family="JetBrains Mono, monospace">Compliance lookup: 55%</text>
-                <rect x="0" y="128" width="270" height="28" fill="#F9F9F7" stroke="#F9F9F7" />
-                <text x="8" y="148" fill="#111111" font-size="11" font-family="JetBrains Mono, monospace">Replacement initiation: 45%</text>
-                <rect x="0" y="172" width="210" height="28" fill="#F9F9F7" stroke="#F9F9F7" />
-                <text x="8" y="192" fill="#111111" font-size="11" font-family="JetBrains Mono, monospace">Locator tasks: 35%</text>
-              </g>
-            </svg>
-          </figure>
 
-          <figure class="chart-block">
-            <svg class="chart-svg" viewBox="0 0 720 240" role="img" aria-labelledby="c4t c4d">
-              <title id="c4t">Column chart of mean post-task confidence scores on a 1 to 5 scale</title>
-              <desc id="c4d">
-                Mean confidence scores range from 2.6 to 3.4 across four task families, clustered around the scale midpoint.
-              </desc>
-              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Mean confidence (1-5 Likert)</text>
-              <g transform="translate(16,48)" stroke="#F9F9F7" fill="#F9F9F7">
-                <rect x="0" y="96" width="140" height="64" />
-                <text x="12" y="124" font-size="11" fill="#111111" font-family="JetBrains Mono, monospace">Scheduling: 2.8</text>
-                <rect x="170" y="80" width="140" height="80" fill="#CC0000" />
-                <text x="182" y="124" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">Compliance: 2.6</text>
-                <rect x="340" y="88" width="140" height="72" />
-                <text x="352" y="124" font-size="11" fill="#111111" font-family="JetBrains Mono, monospace">Replacement: 2.7</text>
-                <rect x="510" y="72" width="140" height="88" />
-                <text x="522" y="124" font-size="11" fill="#111111" font-family="JetBrains Mono, monospace">Locator: 3.4</text>
-              </g>
-            </svg>
-          </figure>
 
           <figure class="chart-block">
             <svg class="chart-svg" viewBox="0 0 720 200" role="img" aria-labelledby="c5t c5d">
