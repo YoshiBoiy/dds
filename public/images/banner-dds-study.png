@@ -24,8 +24,8 @@
   <text x="80" y="130" font-family="Georgia, serif" font-size="42" fill="#111111">GEORGIA</text>
   <text x="80" y="210" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#111111">DDS</text>
   <text x="80" y="270" font-family="Georgia, serif" font-size="28" fill="#CC0000">USABILITY &amp; REDESIGN</text>
-  <text x="80" y="320" font-family="Georgia, serif" font-size="22" fill="#525252">Technical report · citizen-facing digital services</text>
+  <text x="80" y="320" font-family="Georgia, serif" font-size="22" fill="#525252">Technical report Â· citizen-facing digital services</text>
   <path d="M1180 80 L1320 80 L1380 200 L1240 340 L1100 200 Z" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="1140" y="210" transform="rotate(-12 1240 210)" font-family="monospace" font-size="18" fill="#111111">VOL. 1</text>
-  <text x="1180" y="360" font-family="monospace" font-size="14" fill="#737373">TASK SUCCESS · NAV CONFUSION · DOC DISCOVERY</text>
+  <text x="1180" y="360" font-family="monospace" font-size="14" fill="#737373">TASK SUCCESS Â· NAV CONFUSION Â· DOC DISCOVERY</text>
 </svg>
