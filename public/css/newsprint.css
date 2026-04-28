@@ -352,7 +352,7 @@ a:hover {
 }
 
 .prose {
-  max-width: 68ch;
+  max-width: full;
 }
 
 .prose p {
