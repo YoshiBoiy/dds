@@ -31,21 +31,59 @@
               one targets a measurable problem we saw in testing and connects to a specific usability attribute.
             </p>
             <p>
-              <strong>1. Re-label the top-level navigation.</strong> Right now, <em>Appointments</em>, <em>Driver Services</em>, and <em>License/ID</em>
-              sound like they could all hold the answer to any given question. That ambiguity caused 80% first-click inaccuracy on scheduling tasks. Our
-              prototype uses more distinct labels and separates scheduling, online transactions, and educational content into clearly different sections.
-              This makes the site more <strong>learnable</strong>&mdash;users can tell what each section is for at a glance. The trade-off is that
-              returning users who memorized the old labels will need to re-learn, but we&rsquo;d handle this with redirects from old URLs during a
-              transition period.
+  <strong>1. Replace the hero image with Quick and Popular Services.</strong> 
+              The original homepage used a large image at the top that took up most of the screen but did not help users complete tasks. 
+              Important actions like renewing a license or scheduling an appointment were pushed down the page, so users had to scroll or search to find them. 
+              This made the site slower and more frustrating to use. Our redesign removes the large image and adds <em>Quick Services</em> and <em>Popular Services</em> 
+              at the top of the page. These sections clearly show common actions like license renewal, vehicle registration, and scheduling appointments,
+              making it easy to scan and choose a task. This makes the site more <strong>efficient</strong> and <strong>easier to use</strong>&mdash;
+              users can find and start tasks right away. 
             </p>
             <p>
-              <strong>2. Put document checklists next to the action they go with.</strong> Real ID and lost-license tasks had the most late-discovery
-              events, because the list of required documents is usually inside long paragraphs or hidden in a linked PDF. Our prototype puts a clearly
-              boxed checklist right next to buttons like &ldquo;Start replacement&rdquo; or &ldquo;Prepare for your visit.&rdquo; This cuts down on
-              time-on-task and improves <strong>error tolerance</strong>&mdash;users are much less likely to show up missing a document. The maintenance
-              trade-off is that the same information appears in more places, which we&rsquo;d solve by pulling from a shared data source so a single
-              update changes every spot.
+  <strong>2. Improve the Locations page with search, direct actions, and clearer structure.</strong> 
+              The original Locations page relied on long lists of links and bullet points that required users to 
+              click through multiple pages to find basic information. Users could not directly schedule appointments from this page, 
+              and there was no easy way to search for a specific location. This made the process slow and confusing, especially for users 
+              trying to quickly find a nearby center. Our redesign replaces the list-based layout with a structured card system for each location. 
+              Each card includes key details such as address, hours, services, and a <em>Schedule</em> button, allowing users to directly book an appointment 
+              without extra navigation. A search bar is added at the top so users can quickly find locations by city or zip code, and an 
+              <em>Interactive Map View</em> is included at the bottom for users who prefer a visual way to explore locations. 
+              This makes the page more <strong>efficient</strong> and <strong>easier to use</strong>&mdash;users can find, compare, and act on locations in one place. 
+            
             </p>
+            <p>
+  <strong>3. Replace bullet lists with structured sections and add key information upfront.</strong> 
+              The original License/ID page relied heavily on long bullet lists and links, which made it difficult for users to quickly understand what steps to take. 
+              Important information such as required documents, pricing, and deadlines was not clearly visible, forcing users to click through multiple pages or search for details. 
+              This made the process confusing and increased the chances of users missing important requirements. 
+              Our redesign replaces the bullet lists with clearly organized sections and visual boxes for different license types. Each section includes key details such as cost, 
+              requirements, and steps to complete the process. A <em>Required Documents</em> section is added directly on the page to help users prepare ahead of time, 
+              along with the <em>REAL ID deadline</em> and other important notices. This makes the site more <strong>clear</strong> and <strong>easier to 
+                use</strong>&mdash;users can understand what they need and take action without extra searching. 
+            </p>
+
+            <p>
+  <strong>4. Reorganize Testing/Training into Appointments and create a dedicated Vehicle Services page.</strong> 
+              The original Testing and Training page grouped many different links and services together using bullet lists, which made it difficult 
+              for users to find what they actually needed. Actions like scheduling a road test were mixed in with general information, forcing users to search through 
+              multiple links. At the same time, vehicle-related services were not clearly grouped in one place, making tasks like registration or title 
+              transfer harder to find. Our redesign separates these functions by moving testing-related actions into a clear <em>Appointments</em> section and 
+              creating a dedicated <em>Vehicle Services</em> page. The Vehicle Services page organizes all relevant actions such as registration, title services, 
+              and license plates into structured sections with clear labels, pricing, and required documents. This makes the site more <strong>organized</strong> 
+              and <strong>easier to navigate</strong>&mdash;users can quickly find the correct section based on their goal. 
+              
+          </p>
+
+            <p>
+  <strong>5. Replace Forms/Manuals page with Online Services to reduce unnecessary in-person visits.</strong> 
+              The original Forms and Manuals page focused on lists of documents and links, which did not clearly guide users toward completing tasks. 
+              Many users had to figure out on their own which forms to fill out and still ended up coming into the DMV even when the task could be done online. 
+              This created confusion and unnecessary in-person visits. Our redesign replaces this page with an <em>Online Services</em> page that highlights 
+              actions users can complete from home, such as renewing a license, updating an address, or ordering replacement documents. Each service is presented in a 
+              clear card format with a <em>Start Service</em> button, along with pricing and simple steps showing how the process works. 
+              This makes the site more <strong>efficient</strong> and <strong>convenient</strong>&mdash;users are guided directly to complete tasks online 
+              instead of searching through forms. 
+</p>
           </div>
 
           <h2 class="font-serif" style="margin-top: 2.5rem; font-size: 1.75rem">Before and after comparisons</h2>
@@ -54,65 +92,60 @@
           <h3 class="font-serif" style="font-size: 1.25rem">1. Parallel navigation labels</h3>
           <div class="compare-grid hard-shadow-hover">
             <figure class="compare-grid__panel">
-              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <p class="compare-grid__label font-mono">Before</p>
               <img
                 src="/images/1/before.png"
                 width="640"
                 height="360"
                 alt="placeholder"
               />
-
             </figure>
             <figure class="compare-grid__panel">
-              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
               <img
                 src="/images/1/after.png"
                 width="640"
                 height="360"
                 alt="placeholder"
               />
-
             </figure>
           </div>
 
           <h3 class="font-serif" style="font-size: 1.25rem; margin-top: 2rem">2. Document requirements buried in prose</h3>
           <div class="compare-grid hard-shadow-hover">
             <figure class="compare-grid__panel">
-              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <p class="compare-grid__label font-mono">Before</p>
               <img
                 src="/images/2/before.png"
                 width="640"
                 height="360"
                 alt="placeholder"
               />
-
             </figure>
             <figure class="compare-grid__panel">
-              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
               <img
                 src="/images/2/after.png"
                 width="640"
                 height="360"
                 alt="placeholder"
               />
-
             </figure>
           </div>
 
-          <h3 class="font-serif" style="font-size: 1.25rem; margin-top: 2rem">3. Lost-license replacement without a visible path</h3>
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-top: 2rem">3. Service center discovery competing with secondary links</h3>
           <div class="compare-grid hard-shadow-hover">
             <figure class="compare-grid__panel">
-              <p class="compare-grid__label font-mono">Before (representative)</p>
+              <p class="compare-grid__label font-mono">Before</p>
               <img
                 src="/images/3/before.png"
                 width="640"
                 height="360"
                 alt="."
               />
-
             </figure>
             <figure class="compare-grid__panel">
-              <p class="compare-grid__label compare-grid__label--after font-mono">After (prototype)</p>
+              <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
               <img
                 src="/images/3/after.png"
                 width="640"
