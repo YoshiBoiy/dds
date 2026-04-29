@@ -40,10 +40,12 @@
   <figure class="compare-grid__panel">
     <p class="compare-grid__label font-mono">Before</p>
     <img src="/images/1/before.png" width="640" height="360" alt="Original DDS homepage with a large hero image" />
+    <figcaption>Fig. 2.1 &mdash; Original DDS homepage dominated by a hero image.</figcaption>
   </figure>
   <figure class="compare-grid__panel">
     <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
     <img src="/images/1/after.png" width="640" height="360" alt="Redesigned homepage with Quick Services and Popular Services sections" />
+    <figcaption>Fig. 2.2 &mdash; Redesigned homepage with Quick Services and Popular Services up top.</figcaption>
   </figure>
 </div>
 <p class="prose">
@@ -55,10 +57,12 @@
   <figure class="compare-grid__panel">
     <p class="compare-grid__label font-mono">Before</p>
     <img src="/images/2/before.png" width="640" height="360" alt="Original Locations page with lists of links" />
+    <figcaption>Fig. 2.3 &mdash; Original Locations page built around long link lists.</figcaption>
   </figure>
   <figure class="compare-grid__panel">
     <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
     <img src="/images/2/after.png" width="640" height="360" alt="Redesigned Locations page with search, cards, schedule buttons, and map view" />
+    <figcaption>Fig. 2.4 &mdash; Redesigned Locations page with search, location cards, and a map.</figcaption>
   </figure>
 </div>
 <p class="prose">
@@ -70,10 +74,12 @@
   <figure class="compare-grid__panel">
     <p class="compare-grid__label font-mono">Before</p>
     <img src="/images/3/before.png" width="640" height="360" alt="Original License ID page with bullet lists and many links" />
+    <figcaption>Fig. 2.5 &mdash; Original License/ID page with dense bullet lists.</figcaption>
   </figure>
   <figure class="compare-grid__panel">
     <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
     <img src="/images/3/after.png" width="640" height="360" alt="Redesigned Driver License page with boxes, required documents, prices, and deadline information" />
+    <figcaption>Fig. 2.6 &mdash; Redesigned Driver License page with structured boxes, documents, prices, and the Real ID deadline.</figcaption>
   </figure>
 </div>
 <p class="prose">
@@ -85,10 +91,12 @@
   <figure class="compare-grid__panel">
     <p class="compare-grid__label font-mono">Before</p>
     <img src="/images/4/before.png" width="640" height="360" alt="Original Testing and Training page with mixed service links" />
+    <figcaption>Fig. 2.7 &mdash; Original Testing and Training page mixing many unrelated services.</figcaption>
   </figure>
   <figure class="compare-grid__panel">
     <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
     <img src="/images/4/after.png" width="640" height="360" alt="Redesigned Vehicle Services page with registration, title, license plate, document, and appointment options" />
+    <figcaption>Fig. 2.8 &mdash; Redesigned Vehicle Services page grouping registration, title, plate, and appointment options.</figcaption>
   </figure>
 </div>
 <p class="prose">
@@ -100,10 +108,12 @@
   <figure class="compare-grid__panel">
     <p class="compare-grid__label font-mono">Before</p>
     <img src="/images/5/before.png" width="640" height="360" alt="Original Forms and Manuals page with document links" />
+    <figcaption>Fig. 2.9 &mdash; Original Forms and Manuals page focused on document downloads.</figcaption>
   </figure>
   <figure class="compare-grid__panel">
     <p class="compare-grid__label compare-grid__label--after font-mono">After</p>
     <img src="/images/5/after.png" width="640" height="360" alt="Redesigned Online Services page with cards for tasks users can complete online" />
+    <figcaption>Fig. 2.10 &mdash; Redesigned Online Services page surfacing tasks users can complete from home.</figcaption>
   </figure>
 </div>
 <p class="prose">
@@ -165,6 +175,17 @@
               Next steps for a real production rollout would include A/B testing the new navigation labels on a subset of users, adding analytics to
               track first-click paths after the redesign, and running an accessibility audit on the stepper and locator components. We&rsquo;d also want
               to set up a process so that the checklist modules stay in sync with policy updates as DDS rules change.
+            </p>
+            <p>
+              <strong>Hand-off to engineering:</strong> our prototype is meant as a spec for the new structure, not pixel-perfect final art. A few things
+              would help with a clean implementation. Treat the new top-level navigation (Quick Services, Popular Services, Vehicle Services, Online
+              Services, Locations, Appointments) as the source of truth and set up redirects from the old URLs so existing bookmarks and search results
+              still work. Build the document checklists, fees, and Real ID deadlines as structured content rather than hard-coded copy, so they can be
+              updated in one place when DDS policy changes. Add basic analytics on the homepage Quick/Popular Services tiles and on first-click paths so
+              we can measure whether the redesign actually moves the numbers we care about. And please run the new pages through a WCAG accessibility
+              check before launch&mdash;font sizes, color contrast, focus states, and keyboard navigation on the locator and appointment flows are the
+              ones most likely to need attention. We&rsquo;re happy to walk through the Figma file with the engineering team and answer questions during
+              implementation.
             </p>
           </div>
         </div>
