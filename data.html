@@ -27,7 +27,7 @@
           <h1 id="method-heading">Methodology</h1>
           <div class="prose">
             <p>
-              We ran moderated remote usability tests of the live Georgia DDS website with <strong>5 participants</strong> who matched our target
+              We ran moderated remote usability tests of the live Georgia DDS website with <strong>6 participants</strong> who matched our target
               audience&mdash;Georgia residents, mostly students and early-career workers. Each session was about 15 to 20 minutes and followed a
               <strong>think-aloud</strong> format, where participants talked through what they were doing and looking for as they worked through each
               task. We only stepped in with a prompt if a participant gave up on a task or got completely stuck for more than a few minutes.
@@ -38,7 +38,8 @@
               appointment or can be done online, finding forms and manuals, and getting help. None of the tasks asked for sensitive information or
               required logging in. Before each session, a <strong>pre-test survey</strong> captured expectations and prior familiarity with DDS or
               similar government sites. After each session, a <strong>post-test survey</strong> asked about perceived difficulty and a 1-to-5
-              confidence rating per task.
+              confidence rating per task. Most survey items received <strong>6 responses</strong>; the mobile-responsiveness item received
+              <strong>5 responses</strong>.
             </p>
             <div class="prose" style="margin-top: 1.25rem">
               <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem">Study forms</h3>
@@ -121,45 +122,84 @@
           <h2 id="findings-heading">Findings</h2>
           <div class="prose" style="max-width: 72ch">
             <p>
-              Most participants were able to finish most tasks, but very few finished them quickly. The first bar chart shows strict task success rates
-              across the 7 scenarios. Lost-license replacement was the hardest&mdash;only 40% of participants completed it correctly within the time
-              limit&mdash;mostly because the process is spread across multiple pages and the starting point isn&rsquo;t clear. The appointment-versus-online
-              task went best at 88%, largely because once users understood the distinction they could answer the question directly.
+              The post-test data shows that participants could generally complete DDS tasks, but the experience still required effort and clearer
+              navigation. In the overall ease rating, <strong>66.7%</strong> of respondents called the tasks easy and <strong>33.3%</strong> were
+              neutral; no one rated the tasks difficult. That positive result was tempered by information-architecture issues: <strong>100%</strong>
+              of respondents said they looked first to the main navigation menu or tabs, while no respondents reported starting with the search bar.
+              On the homepage, only <strong>50%</strong> felt the amount of information was about right, while <strong>33.3%</strong> said there was
+              too much information and <strong>16.7%</strong> said there was too little. The services people expected to use most were
+              scheduling/canceling appointments (<strong>83.3%</strong>) and license renewal or replacement (<strong>66.7%</strong>), which supports
+              making those actions more prominent. Confidence was mixed: responses split across ratings 2, 3, 4, and 5, with no one choosing 1. Error
+              messages and prompts also landed mostly in the fair-to-good range, while the mobile-responsiveness item skewed positive with
+              <strong>60%</strong> rating it 4 out of 5.
             </p>
           </div>
 
-          <figure class="chart-block">
-            <svg class="chart-svg" viewBox="0 0 720 260" role="img" aria-labelledby="c1t c1d">
-              <title id="c1t">Bar chart of strict task success rates for seven DDS scenarios</title>
-              <desc id="c1d">
-                Tasks T1 through T7 show success percentages from 40 to 88 percent, with lost-license replacement lowest at 40 percent and the
-                appointment-versus-online clarification task highest at 88 percent.
-              </desc>
-              <text x="16" y="28" font-size="14" fill="#F9F9F7" font-family="Inter, sans-serif">Task success (strict criteria)</text>
-              <g transform="translate(16,48)" stroke="#F9F9F7">
-                <line x1="0" y1="200" x2="656" y2="200" stroke="#A3A3A3" />
-                <rect x="0" y="40" width="80" height="160" fill="#F9F9F7" />
-                <rect x="96" y="80" width="80" height="120" fill="#F9F9F7" />
-                <rect x="192" y="120" width="80" height="80" fill="#CC0000" stroke="#F9F9F7" />
-                <rect x="288" y="60" width="80" height="140" fill="#F9F9F7" />
-                <rect x="384" y="24" width="80" height="176" fill="#F9F9F7" />
-                <rect x="480" y="90" width="80" height="110" fill="#F9F9F7" />
-                <rect x="576" y="50" width="80" height="150" fill="#F9F9F7" />
-                <text x="18" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T1 80%</text>
-                <text x="114" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T2 60%</text>
-                <text x="210" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T3 40%</text>
-                <text x="306" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T4 70%</text>
-                <text x="402" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T5 88%</text>
-                <text x="498" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T6 55%</text>
-                <text x="594" y="218" font-size="11" fill="#F9F9F7" font-family="JetBrains Mono, monospace">T7 75%</text>
-              </g>
-              <text x="16" y="248" fill="#A3A3A3" font-size="10" font-family="JetBrains Mono, monospace">
-                T1 road test | T2 Real ID | T3 lost license | T4 center | T5 appt vs online | T6 forms/manuals | T7 help
-              </text>
-            </svg>
-          </figure>
-
-
+          <div class="evidence-grid" aria-label="Survey chart screenshots">
+            <figure class="evidence-card hard-shadow-hover">
+              <img
+                src="/images/findings/overall-task-ease.png"
+                width="1538"
+                height="636"
+                alt="Pie chart showing 66.7% easy and 33.3% neutral for overall task difficulty across 6 responses"
+              />
+              <figcaption>Overall task ease: 66.7% easy, 33.3% neutral, 6 responses.</figcaption>
+            </figure>
+            <figure class="evidence-card hard-shadow-hover">
+              <img
+                src="/images/findings/homepage-information-amount.png"
+                width="1538"
+                height="632"
+                alt="Pie chart showing homepage information amount: 50% about right, 33.3% too much, and 16.7% too little"
+              />
+              <figcaption>Homepage information load: 50% about right, 33.3% too much, 16.7% too little.</figcaption>
+            </figure>
+            <figure class="evidence-card evidence-card--wide hard-shadow-hover">
+              <img
+                src="/images/findings/anticipated-services.png"
+                width="1548"
+                height="768"
+                alt="Bar chart showing expected DDS service use, led by appointments at 83.3% and license renewal or replacement at 66.7%"
+              />
+              <figcaption>Expected real-life use: appointments led at 83.3%, followed by license renewal or replacement at 66.7%.</figcaption>
+            </figure>
+            <figure class="evidence-card hard-shadow-hover">
+              <img
+                src="/images/findings/confidence-without-assistance.png"
+                width="1544"
+                height="750"
+                alt="Bar chart showing confidence ratings: 0 at 1, 2 at 2, 1 at 3, 2 at 4, and 1 at 5"
+              />
+              <figcaption>Confidence without assistance: responses clustered at 2 and 4, with one rating each at 3 and 5.</figcaption>
+            </figure>
+            <figure class="evidence-card hard-shadow-hover">
+              <img
+                src="/images/findings/error-message-ratings.png"
+                width="1542"
+                height="746"
+                alt="Grouped bar chart showing message clarity and helpfulness mostly rated fair or good, with tone receiving fair, good, and excellent ratings"
+              />
+              <figcaption>Error prompts: clarity and helpfulness were mostly fair or good; tone received one excellent rating.</figcaption>
+            </figure>
+            <figure class="evidence-card hard-shadow-hover">
+              <img
+                src="/images/findings/mobile-responsiveness.png"
+                width="1536"
+                height="762"
+                alt="Bar chart showing mobile responsiveness ratings from 5 responses: one rating 2, one rating 3, and three ratings 4"
+              />
+              <figcaption>Mobile responsiveness: 60% rated it 4 out of 5 across 5 responses.</figcaption>
+            </figure>
+            <figure class="evidence-card evidence-card--wide hard-shadow-hover">
+              <img
+                src="/images/findings/first-place-looked.png"
+                width="1536"
+                height="752"
+                alt="Bar chart showing 100% looked first at the main navigation menu or tabs, 33.3% used homepage quick links, and 0% used search"
+              />
+              <figcaption>First place looked: 100% started with main navigation, 33.3% used homepage quick links, and 0% used search.</figcaption>
+            </figure>
+          </div>
 
           <h3 class="font-serif" style="margin-top: 2rem">Participant quotations (qualitative)</h3>
           <table class="data-table font-body">
@@ -173,37 +213,56 @@
             <tbody>
               <tr>
                 <td>P02</td>
-                <td>Real ID checklist</td>
+                <td>Navigation overlap</td>
                 <td class="quote">
-                  &ldquo;I see the words Real ID, but the actual list of papers is buried under paragraphs I already read twice.&rdquo;
+                  &ldquo;The website had multiple sections that seemed similar like &lsquo;Appointments&rsquo; &lsquo;Driver Services&rsquo; and
+                  &lsquo;License/ID&rsquo; and it wasn&rsquo;t immediately clear which one contained the scheduling option.&rdquo;
                 </td>
               </tr>
               <tr>
                 <td>P03</td>
-                <td>Real ID documentation</td>
+                <td>Document discovery</td>
                 <td class="quote">
-                  &ldquo;I only found the PDF after I opened two other pages that sounded the same; nothing told me this was the canonical list.&rdquo;
+                  &ldquo;Finding documents was probably the most confusing one just because there were a lot of words around that section, overwhelming me
+                  with information at one given point.&rdquo;
                 </td>
               </tr>
               <tr>
                 <td>P04</td>
-                <td>Top-level navigation</td>
+                <td>Lost license replacement</td>
                 <td class="quote">
-                  &ldquo;Appointments and driver services sound like the same door; I picked the wrong one first.&rdquo;
+                  &ldquo;The DDS supplies every link needed to complete my tasks. Though, there are certain tabs of the website that could be better
+                  accessed, such as the Lost License page.&rdquo;
                 </td>
               </tr>
               <tr>
                 <td>P01</td>
-                <td>Lost license replacement</td>
+                <td>Online replacement access</td>
                 <td class="quote">
-                  &ldquo;I am on the right site, but I still do not know if I am starting the replacement or reading general policy.&rdquo;
+                  &ldquo;I was not able to access the online license replace screen without logging in, but I could access the in-person system for license
+                  replacing. This is inconvenient for the average user, who most likely would like an online solution ready at-hand.&rdquo;
                 </td>
               </tr>
               <tr>
                 <td>P05</td>
-                <td>Service center discovery</td>
+                <td>New ID forms</td>
                 <td class="quote">
-                  &ldquo;The map is here somewhere, but I am distracted by everything else that looks equally important.&rdquo;
+                  &ldquo;I could not find the forms needed to get a new ID. I could find the steps, but not a section specific containing all forms needed.&rdquo;
+                </td>
+              </tr>
+              <tr>
+                <td>P06</td>
+                <td>Homepage priority</td>
+                <td class="quote">
+                  &ldquo;Common tasks need more priority it's users now have to navigate through several menus or read through multiple sections to figure
+                  out the correct path.&rdquo;
+                </td>
+              </tr>
+              <tr>
+                <td>P04</td>
+                <td>Help access</td>
+                <td class="quote">
+                  &ldquo;Appointments and online services were both straightforward. Acquiring help was not as accessible.&rdquo;
                 </td>
               </tr>
             </tbody>
